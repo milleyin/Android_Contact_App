@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/dialog_bg" >
+  	<LinearLayout 
+  		android:orientation="vertical"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:minWidth="300dip"
+  		android:paddingLeft="20dip"
+  		android:paddingRight="20dip"
+  		android:paddingTop="25dip"
+  		android:paddingBottom="25dip">
+	  	<LinearLayout 
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:paddingLeft="3dip"
+	  		android:paddingRight="3dip" >
+		    <TextView 
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="#000"
+		    	android:textSize="18sp"
+		    	android:singleLine="true"
+		    	android:text="确定拨打"/>
+		    <TextView 
+		    	android:id="@+id/phonenumbertextview"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1.0"
+		    	android:layout_marginLeft="5dip"
+		    	android:textColor="#3d8eba"
+		    	android:textSize="18sp"
+		    	android:singleLine="true"
+		    	android:ellipsize="marquee" />
+		</LinearLayout>
+		<LinearLayout 
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:layout_marginTop="20dip" >
+	  		<Button 
+	  			android:id="@+id/cancelbutton" 
+	  			android:layout_width="fill_parent" 
+	  			android:layout_weight="1" 
+	  			android:textColor="@color/text_color_base" 
+	  			android:background="@drawable/btn_gary" 
+	  			android:layout_height="40dp" 
+	  			android:text="取消" 
+	  			android:textSize="14sp" 
+	  			android:layout_marginRight="5dp" />
+	        <Button 
+	        	android:id="@+id/okbutton" 
+	        	android:layout_width="fill_parent" 
+	        	android:layout_weight="1" 
+	        	android:textColor="@color/white_color" 
+	        	android:textSize="14sp" 
+	        	android:layout_height="40dp" 
+	        	android:text="确定" 
+	        	android:background="@drawable/btn_blue" 
+	        	android:layout_marginLeft="5dp" />
+	  	</LinearLayout>
+  	</LinearLayout>
+</LinearLayout>

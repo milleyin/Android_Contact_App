@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#ffffff"
+	    android:orientation="vertical" >
+	
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_height="wrap_content" >
+	
+	        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_centerHorizontal="true" >
+	            <Button android:id="@+id/btn_switch_to_blacklist" android:layout_width="100dp" android:textColor="@color/text_color_base" android:layout_height="40dp" android:text="黑名单" android:gravity="center" android:background="@drawable/black_white_top_left_selected" />
+	            <Button android:id="@+id/btn_switch_to_whitelist" android:layout_width="100dp" android:textColor="@color/text_color_base"  android:layout_height="40dp" android:text="白名单" android:gravity="center" android:background="@drawable/black_white_top_right_normal" />
+	        </LinearLayout>
+	        
+	        <Button
+	            android:id="@+id/btn_add_in"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="5dp"
+	            android:background="@drawable/btn_add_new" />
+	    </RelativeLayout>
+	
+	    <TextView android:layout_width="fill_parent" android:layout_height="1dp" android:background="#acacac" />
+	    
+	    <ListView
+	        android:id="@+id/lv"
+	        android:layout_width="fill_parent"
+	        style="@style/style_my_listView"
+	        android:layout_height="wrap_content" >
+	    </ListView>
+	
+	    <!--  
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="白名单" />
+	
+	        <Button
+	            android:id="@+id/white_add"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:text="添加" />
+	    </RelativeLayout>
+	
+	    <ListView
+	        android:id="@+id/lvwhite"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	    </ListView>
+	
+	-->
+	</LinearLayout>
+	
+	 <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" >
+        
+        <LinearLayout android:id="@+id/tips_add_layout"  android:visibility="gone" android:background="@color/tip_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" >
+            <TextView android:id="@+id/add_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible"/>
+            <TextView android:id="@+id/tv_add_tips" android:textColor="@color/text_color_base" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:layout_marginBottom="3dp" />
+           	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" >
+            	<TextView android:id="@+id/tv_top_tips"  android:textColor="@color/text_color_base" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:text="电话号码: " />
+            	<EditText android:id="@+id/et_telephone" android:layout_width="160dip" android:layout_height="wrap_content" android:background="@drawable/edittext_bg" android:textColor="@color/text_color_base" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="3dp" >
+                <Button android:id="@+id/btn_add_tips_yes" android:textColor="@color/text_color_base" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/btn_blue" android:text="确定" android:layout_marginRight="20dp"  />
+                <Button android:id="@+id/btn_add_tips_no" android:textColor="@color/text_color_base" android:layout_width="80dp" android:layout_height="40dp" android:text="取消" android:background="@drawable/btn_gary" />
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"  >
+        
+        <LinearLayout android:id="@+id/tips_top_layout" android:visibility="gone" android:background="@color/tip_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" >
+           	<TextView android:id="@+id/delete_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible"/>
+            <TextView android:id="@+id/delete_id" android:visibility="gone" android:textColor="#ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" />
+            <TextView android:id="@+id/tv_delete_tips" android:textColor="@color/text_color_base"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:layout_marginBottom="3dp"  />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="3dp"  >
+                <Button android:id="@+id/btn_top_tips_yes" android:textColor="@color/text_color_base" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/btn_blue" android:text="确定" android:layout_marginRight="20dp" />
+                <Button android:id="@+id/btn_top_tips_no" android:textColor="@color/text_color_base" android:layout_width="80dp" android:layout_height="40dp" android:text="取消" android:background="@drawable/btn_gary" />
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+	
+</FrameLayout>

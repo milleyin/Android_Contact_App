@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_ly"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:gravity="center">
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+        
+<!--         <LinearLayout android:layout_width="300dp" android:layout_height="fill_parent"  android:background="#ffffff" android:orientation="vertical" > -->
+       <TextView  android:layout_width="fill_parent" android:layout_height="40dp" android:textSize="18sp" android:gravity="center_vertical" android:text="编辑常用联系人" android:textColor="@color/text_color_base" android:paddingLeft="10dp" android:background="@drawable/remind_top_bg" />
+       <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:orientation="horizontal" >
+           <ListView android:id="@+id/contact_lv" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/style_my_listView" ></ListView>
+       </LinearLayout>
+       <View android:layout_width="fill_parent" android:layout_height="0.7dp" android:background="#cecece" />
+	           <LinearLayout android:layout_width="fill_parent" android:layout_height="60dp" android:background="#fff" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="15dp" android:paddingBottom="15dp" >
+	                <Button android:id="@+id/btn_edit_cancel"  android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="fill_parent" android:text="取消" android:layout_marginLeft="5dp" android:textColor="@color/text_color_base" android:layout_marginRight="5dp" android:background="@drawable/btn_gary" />
+	               	               <Button android:id="@+id/btn_edit_ok" android:layout_width="wrap_content" android:layout_weight="1"  android:layout_height="fill_parent" android:text="保存" android:layout_marginLeft="5dp" android:textColor="@color/white_color" android:layout_marginRight="5dp" android:background="@drawable/btn_blue"/>
+	           </LinearLayout>
+
+<!--    </LinearLayout> -->
+        
+<!--         <ListView android:id="@+id/contact_lv" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:layout_weight="1" style="@style/style_my_listView" /> -->
+        
+    </LinearLayout>
+
+</LinearLayout>

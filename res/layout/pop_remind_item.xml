@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main_layout"
+    android:orientation="vertical" >
+    
+    
+        
+    <LinearLayout android:layout_width="fill_parent" android:background="@drawable/dialog_bg" android:layout_height="wrap_content" android:padding="5dp" android:orientation="vertical" >
+        
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提醒详情" android:textSize="18sp" android:textColor="@color/text_color_base" android:layout_centerVertical="true"/>
+            
+            <Button android:id="@+id/btn_pop_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/menu_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginLeft="20dp"/>
+            <Button android:id="@+id/btn_pop_edit" android:layout_toLeftOf="@id/btn_pop_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_remind_edit_click" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        
+        <ScrollView android:layout_width="fill_parent" android:layout_height="200dp" android:background="@drawable/remind_bg2" android:layout_margin="8dp"  >
+            
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"  >
+            
+             <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_margin="5dp">
+            
+	           <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="3dp" >
+	              <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人: " android:textColor="@color/text_color_base"  />
+	              <TextView android:id="@+id/tv_contact" android:clickable="true"  android:layout_width="wrap_content"  android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:textColor="@color/text_color_base" />
+	           </LinearLayout>
+	           
+	           <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="3dp" >
+	              <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="参与人:" android:visibility="gone" android:textColor="@color/text_color_base"  />
+	             <TextView android:id="@+id/tv_partners"  android:layout_width="wrap_content"  android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:textColor="@color/text_color_base" />
+	           </LinearLayout>
+	           
+	            
+	           <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" >
+	              <TextView android:id="@+id/tv_event_time"  android:text="1-1至1-2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:textColor="@color/text_color_base" />
+	              <TextView android:id="@+id/tv_remind_num"  android:text="提醒:1 天" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:textColor="@color/text_color_base" />
+	           </RelativeLayout>
+	
+	           <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" >
+	              <TextView android:id="@+id/tv_repeat_type"  android:text="重复:每天" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:textColor="@color/text_color_base" />
+	              <TextView android:id="@+id/tv_repeat_freq"  android:text="重复频率:1 天" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:textColor="@color/text_color_base" />
+	           </RelativeLayout>
+	    
+	           <TextView android:id="@+id/t_repeat_codition" android:text="重复时间: 每周  周一  周二" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_marginBottom="3dp" android:textColor="@color/text_color_base" />
+	           
+	           <TextView android:id="@+id/tv_repeat_time" android:text="重复开始:    重复结束:    " android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_marginBottom="3dp" android:textColor="@color/text_color_base" />
+	           
+	           <TextView android:id="@+id/tv_remind_time" android:text="提醒次数" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_marginBottom="3dp" android:textColor="@color/text_color_base" />
+	           
+	           
+	           <TextView android:id="@+id/content" android:text="与XXX确定项目进度" android:textColor="#106c96" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        	</LinearLayout>
+        
+          </LinearLayout>
+          
+        </ScrollView>
+    </LinearLayout>
+    
+</LinearLayout>

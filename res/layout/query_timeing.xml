@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:orientation="vertical"
+      android:layout_height="wrap_content"
+      android:id="@+id/main_layout"
+      android:gravity="center_vertical"
+      android:paddingTop="5dp"
+      >
+      <LinearLayout 
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+          >
+      <ImageView   android:id="@+id/time_contact_image" android:layout_width="55dp"   android:layout_height="55dp" android:src="@drawable/default_contact"  />
+      
+      <LinearLayout android:layout_marginLeft="5dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" >
+          <TextView   android:id="@+id/time_contact_name" android:text=""   android:layout_width="wrap_content"   android:layout_height="wrap_content"  android:layout_toRightOf="@id/time_contact_image" />
+          
+          <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" >
+              <TextView   android:id="@+id/time_contact_number" android:text=""  android:layout_width="fill_parent" android:layout_weight="1"   android:layout_height="wrap_content" />
+              <TextView android:id="@+id/time_contact_time" android:text="" android:layout_width="wrap_content"   android:layout_height="wrap_content"  />
+          </LinearLayout>
+          
+      </LinearLayout>
+       </LinearLayout>
+      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/time_message_content" android:text="hello"  android:layout_marginBottom="3dp" android:lines="3"/>
+      
+      
+      <LinearLayout
+        android:id="@+id/menu"
+        android:background="@drawable/menu_bg"
+        android:layout_marginBottom="-75dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_weight="1" >
+                 <Button
+            android:id="@+id/menu_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/btn_remind_edit_click"
+             />
+        </LinearLayout>
+        
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_weight="1" >
+           <Button
+            android:id="@+id/menu_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_delete" />
+        </LinearLayout>
+                    
+    </LinearLayout>
+      
+  </LinearLayout>
+

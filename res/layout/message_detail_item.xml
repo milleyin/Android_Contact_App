@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+        <!-- 定时短信的时间 -->
+    <TextView android:id="@+id/tv_timing" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#999999"
+              android:textSize="12sp" android:visibility="gone"  />
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/receive_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true" android:longClickable="true"  
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp" >
+
+            <LinearLayout android:id="@+id/ln_receive_content"  android:background="@drawable/balloon_l"  android:layout_alignParentLeft="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220dp" android:orientation="vertical" android:gravity="center" >
+                
+                <ImageView android:id="@+id/img_mms_receive" android:src="@drawable/default_contact"  android:layout_width="120dp" android:layout_height="120dp"  android:maxHeight="120dp" android:visibility="gone" android:scaleType="centerInside" android:layout_marginBottom="3dp" />
+                
+                <TextView
+                android:id="@+id/receive_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="220dp"
+                android:gravity="top|left"
+                android:textColor="@color/text_color_base"
+                android:textSize="15sp" />
+                     
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/lnnn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ln_receive_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="left"
+                android:minWidth="40dp"
+                android:orientation="vertical"
+                android:paddingLeft="3dp" >
+
+                <TextView
+                    android:id="@+id/receive_message_today_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/receive_message_today_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/send_layout"
+            android:clickable="true" android:longClickable="true"
+            android:gravity="right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:minWidth="40dp"
+                android:orientation="vertical"
+                android:paddingRight="3dp" >
+
+                <TextView
+                    android:id="@+id/message_today_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:layout_marginRight="2dp"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/message_today_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+                
+                <TextView
+                    android:id="@+id/send_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text=""
+                    android:textColor="@color/text_color_base"
+                    android:textSize="12sp" />
+                
+                <!-- 定时短信的图标 -->
+                <ImageView android:id="@+id/img_timing" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/timing_sms" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:background="@drawable/balloon_r" android:gravity="center_horizontal" android:orientation="vertical" >
+                
+                <ImageView android:id="@+id/img_mms_send" android:src="@drawable/default_contact"  android:layout_width="120dp" android:layout_height="120dp" android:visibility="gone" android:scaleType="centerInside" android:layout_marginBottom="3dp" />
+                
+               <TextView
+                android:id="@+id/send_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:textColor="@color/text_color_base"
+                android:textSize="15sp" />
+                         
+            </LinearLayout>
+            
+   
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/dotted_line_grayr" />
+
+        <TextView
+            android:id="@+id/ago_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/dotted_line_grayr" />
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/setting_pwd_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/en_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="70dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/encryption_ic" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/settingpwd"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/pwd1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_pw_text"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:hint="请输入密码"
+                android:text="密  码:"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_pwd_1"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:background="@drawable/fillet_bg"
+                android:hint="请输入密码"
+                android:singleLine="true"
+                android:password="true"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwd2_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <!-- <TextView android:layout_width="60dp" android:layout_height="wrap_content" android:text="确认密码:" android:textColor="#ffffff" android:hint="请再次输入密码" android:layout_marginRight="2dp" /> -->
+
+            <EditText
+                android:id="@+id/et_pwd_2"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:background="@drawable/fillet_bg"
+                android:hint="请再次输入密码"
+                android:singleLine="true"
+                android:password="true"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- <Button android:id="@+id/forgetpwd" android:layout_gravity="right" android:visibility="gone" android:layout_width="120dp" android:layout_height="40dp" android:text="忘记密码" android:layout_marginRight="5dp" android:background="@drawable/encryption_btn_normal" /> -->
+            <!-- <Button android:id="@+id/submit" android:layout_width="wrap_content" android:layout_height="40dp" android:text="提  交" android:background="@drawable/encryption_btn_normal" /> -->
+
+            <Button
+                android:id="@+id/forgetpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/encryption_btn_normal"
+                android:text="忘记密码"
+                android:textColor="@color/text_color_base"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/encryption_btn_normal"
+                android:text="确  定"
+                android:textColor="#0a0a0a"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_answer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/en_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/encryption_forget_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="设置安全问题"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/pwd1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_for_1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_bg"
+                android:hint="请设置问题"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwd2_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_for_2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_bg"
+                android:hint="请输入答案"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="当你忘记密码时，可通过此问题找回密码"
+            android:textColor="#acacac" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/encryption_btn_normal"
+                android:text="确  定"
+                android:textColor="@color/text_color_base" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_over_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/en_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您现在可查看加密后的内容，请返回列表页查看"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/return_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/encryption_btn_normal"
+                android:text="返回"
+                android:textColor="@color/text_color_base" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/re_setting_ask"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/encryption_btn_normal"
+                android:text="修改安全问题"
+                android:textColor="@color/text_color_base" />
+
+            <Button
+                android:id="@+id/re_setting_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/encryption_btn_normal"
+                android:text="修改密码"
+                android:textColor="@color/text_color_base" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

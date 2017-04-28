@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:paddingBottom="20dp"
+    android:orientation="vertical" >
+   
+    
+    <TextView 
+    android:id="@+id/editText1" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:background="@drawable/remind_top_bg_2"
+    android:text="短信库" 
+    android:textColor="@color/text_color_base"
+    android:layout_marginBottom="6dp"
+   android:gravity="center_vertical"
+    android:textSize="18sp"
+    android:paddingLeft="10dp"
+    /> 
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/sort_message"   
+       android:visibility="gone"
+       >
+     <Button 
+	       android:layout_width="fill_parent"
+	       android:layout_height="40dp"
+	       android:layout_marginLeft="1dp"
+	       android:layout_marginRight="1dp"
+	       android:layout_weight="1"
+	       android:text="节日常用"         
+	       android:textSize="13sp" android:textColor="@color/white_color"
+	       android:id="@+id/holiday"
+	       android:background="@drawable/intercept_top_selected_bg"
+	       
+         />    
+         
+           <Button 
+	        android:layout_width="fill_parent"
+	       android:layout_height="40dp"
+	       android:layout_weight="1"
+	       android:text="搞笑常用"     
+	       android:layout_marginLeft="1dp"
+	       android:layout_marginRight="1dp"
+	       android:textSize="13sp" android:textColor="@color/text_color_base" 
+	       android:id="@+id/funny"
+	       android:background="@drawable/intercept_top_normal_bg"
+         />  
+           <Button 
+	        android:layout_width="fill_parent"
+	       android:layout_height="40dp"
+	       android:layout_weight="1"
+	       android:text="恋爱常用"       
+	             android:layout_marginLeft="1dp"
+	       android:layout_marginRight="1dp"
+	       android:textSize="13sp" android:textColor="@color/text_color_base"
+	        android:id="@+id/love"
+	        android:background="@drawable/intercept_top_normal_bg"
+         />  
+           <Button 
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:layout_weight="1"
+	        android:text="运营商常用"  
+	              android:layout_marginLeft="1dp"
+	       android:layout_marginRight="2dp"
+	        android:textSize="13sp" android:textColor="@color/text_color_base" 
+	        android:id="@+id/message_operator"   
+	        android:background="@drawable/intercept_top_normal_bg" 
+         />  
+   </LinearLayout>
+   
+   <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#919191" />
+   
+   <ListView 
+       android:layout_width="fill_parent"
+       android:layout_height="350dp"
+       android:id="@+id/message_list"
+       style="@style/style_my_listView"
+       >
+       
+   </ListView>
+   <LinearLayout 
+       android:layout_marginTop="5dp"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       >
+              <Button 
+           android:layout_width="fill_parent"
+	       android:layout_height="40dp"
+	       android:layout_weight="1"
+	        android:id="@+id/message_cancel"
+	       android:text="取消"
+	       android:textColor="@color/text_color_base"
+	       android:background="@drawable/btn_gary"
+           android:textSize="14sp"/>
+              
+       <Button 
+           android:layout_width="fill_parent"
+	       android:layout_height="40dp"
+	       android:layout_weight="1"
+	       android:id="@+id/message_confirm"
+	       android:text="确认"
+	       android:layout_marginLeft="5dp"
+	       android:textColor="@color/white_color"
+	       android:background="@drawable/btn_blue"
+           android:textSize="14sp"/>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+    
+    <!-- 首页层  -->
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+        
+        <!-- 内容区域 -->
+       <LinearLayout android:id="@+id/home_content" android:background="#ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:layout_weight="1" >
+           <include layout="@layout/home_layout" /> 
+           <include layout="@layout/contact" android:id="@+id/layout_contact" />
+           <include layout="@layout/message_list" android:id="@+id/layout_message_list" />
+           <include layout="@layout/setting_layout"  android:id="@+id/layout_setting" />
+       </LinearLayout>
+    
+        <!-- 底栏 -->
+        <LinearLayout android:background="@color/base_bg" android:id="@+id/bottom_layout" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_padding" android:orientation="horizontal" android:layout_alignParentBottom="true"  >
+          
+           <!-- 拨号盘 -->
+           <LinearLayout android:id="@+id/dialing_ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" >
+                <Button android:id="@+id/btn_dialing" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:background="@drawable/btn_dialing_panel"  />
+           </LinearLayout>
+          
+           <!-- 弧形键盘(默认隐藏) -->
+           <LinearLayout android:visibility="gone" android:id="@+id/huxing_ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" >
+                <Button android:id="@+id/huxing"      android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_arc_panel" />
+           </LinearLayout> 
+          
+           <!-- 联系人 -->
+           <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" >
+                <Button android:id="@+id/btn_contacts" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="联系人"  />
+           </LinearLayout>
+          
+           <!-- 短信 -->
+           <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" >
+                <Button android:id="@+id/btn_messages" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="短信" />
+           </LinearLayout>
+          
+           <!-- 设置 -->
+           <LinearLayout android:id="@+id/setting_ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center"  >
+                  <Button android:id="@+id/btn_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_bottom_setting"   />
+           </LinearLayout>  
+          
+        </LinearLayout>
+     
+    </LinearLayout>
+    
+    <!-- 引导提示层 -->
+    <FrameLayout android:layout_width="fill_parent" android:clickable="true" android:focusable="true" android:layout_height="fill_parent" android:id="@+id/fram_tip_mask" android:visibility="gone" ></FrameLayout>
+    
+</FrameLayout>

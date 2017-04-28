@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:layout_width="wrap_content">
+	
+	<LinearLayout 
+		android:layout_height="wrap_content"
+		android:background="@drawable/dialog_bg"
+		android:layout_width="300dp"
+		android:layout_gravity="center_horizontal"
+		android:orientation="vertical"
+		>
+		
+	    <TextView android:layout_width="fill_parent" android:layout_height="40dp" android:background="@drawable/remind_top_bg" android:textColor="@color/text_color_base" android:textSize="18sp" android:text="请选择生日" android:gravity="center_vertical" android:layout_marginBottom="10dp" android:paddingLeft="10dp" />
+	    
+	  	
+	    <LinearLayout
+            android:id="@+id/timePicker1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:background="@drawable/wheel_left_2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                   android:padding="5dp"
+                    android:text="月"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <com.dongji.app.ui.WheelView
+                    android:id="@+id/birthday_month"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:background="@drawable/wheel_right_2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="日"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <com.dongji.app.ui.WheelView
+                    android:id="@+id/birthday_day"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        
+		
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_horizontal" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"  >
+		   		    <Button android:id="@+id/btn_picbirthday_no" android:layout_width="120dp" android:layout_height="40dp" android:textColor="@color/text_color_base" android:textSize="14sp" android:background="@drawable/btn_gary" android:text="取消" />
+		    <Button android:id="@+id/btn_picbirthday_yes" android:layout_width="120dp" android:layout_height="40dp" android:textColor="@color/white_color" android:textSize="14sp" android:background="@drawable/btn_blue" android:text="确定" android:layout_marginLeft="10dp" />
+		</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>

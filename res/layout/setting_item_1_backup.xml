@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+        <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:id="@+id/backup_recovery"
+		    android:orientation="vertical">
+		   <TextView 
+			       android:layout_width="fill_parent"
+			      android:layout_height="wrap_content"
+			       android:text="随时备份您的联系人、通话记录、短信、提醒、及短信收藏箱，让你的数据安全无忧；备份过程中，所有备份的信息将会使用您的密码进行加密，确保数据不会泄露。"
+			       android:layout_marginTop="5dp"
+			       android:textColor="@color/text_color_gray"  android:textSize="13sp"
+			       />
+		     <LinearLayout 
+		        android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			     android:layout_weight="1" 
+			     android:layout_marginTop="5dp"
+			     android:layout_marginBottom="5dp"
+			     android:background="@drawable/corner_bg_dash"
+			     android:gravity="center_horizontal">
+			    
+		         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/local_backup"  android:layout_marginBottom="5dp" android:layout_marginTop="10dp"  />
+		         
+		          <LinearLayout 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginTop="5dp"
+		              android:layout_marginBottom="5dp"
+		              >
+		               <Button 
+			      android:layout_width="120dp"
+			      android:layout_height="40dp"
+			      android:text="本地备份"
+			      android:id="@+id/local_backup"
+			      android:gravity="center"
+			      android:textColor="@color/finish_backup"
+			      android:background="@drawable/btn_backup_start"
+			      android:layout_marginTop="5dp"
+			      />
+			   <Button 
+			      android:layout_height="40dp"
+			      android:layout_width="120dp"
+			      android:gravity="center"
+			      android:text="本地恢复"
+			      android:id="@+id/local_recovery"
+			      android:textColor="@color/finish_backup"
+			        android:background="@drawable/btn_orange"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="5dp"
+			      />
+		              
+		          </LinearLayout>
+		           
+		           
+			</LinearLayout>
+            <LinearLayout 
+		        android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			     android:layout_weight="1" 
+			     android:layout_marginTop="5dp"
+			     android:layout_marginBottom="5dp"
+			     android:background="@drawable/corner_bg_dash"
+			     android:gravity="center_horizontal">
+			    
+		         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_cloud"  android:layout_marginBottom="5dp" android:layout_marginTop="10dp"  />
+		         
+		          <LinearLayout 
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_marginBottom="5dp"
+		              android:layout_marginTop="5dp"
+		              >
+			   <Button 
+			      android:layout_width="120dp"
+			      android:layout_height="40dp"
+			      android:text="云备份"
+			      android:id="@+id/onekey_backup"
+			      android:gravity="center"
+			      android:textColor="@color/finish_backup"
+			        android:background="@drawable/btn_backup_start"
+			         android:layout_marginTop="5dp"
+			      />
+			   <Button 
+			      android:layout_height="40dp"
+			      android:layout_width="120dp"
+			      android:gravity="center"
+			      android:text="云恢复"
+			      android:id="@+id/onekey_recovery"
+			      android:textColor="@color/finish_backup"
+			        android:background="@drawable/btn_orange"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginLeft="5dp"
+			      />
+			   </LinearLayout>
+		           
+		            
+			</LinearLayout>
+            <!--  
+            <LinearLayout 
+               android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:gravity="center"
+	    >
+                 <Button 
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="10dp"
+      android:text="备份"
+      android:id="@+id/onekey_backup"
+      android:textColor="@color/text_color_base"
+        android:background="@drawable/btn_blue"
+      />
+   <Button 
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:text="恢复"
+      android:id="@+id/onekey_recovery"
+      android:textColor="@color/text_color_base"
+        android:background="@drawable/btn_blue"
+      />
+                
+            </LinearLayout>
+            -->
+<!--                         <LinearLayout  -->
+<!--                android:layout_width="fill_parent" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    android:layout_marginTop="10dp" -->
+<!-- 	    android:layout_marginBottom="10dp" -->
+<!-- 	    android:gravity="center" -->
+<!-- 	    > -->
+<!--                  <Button  -->
+<!--       android:layout_width="120dp" -->
+<!--       android:layout_height="wrap_content" -->
+<!--       android:layout_marginRight="10dp" -->
+<!--       android:text="本地备份" -->
+<!--       android:id="@+id/local_backup" -->
+<!--       android:textColor="@color/text_color_base" -->
+<!--         android:background="@drawable/btn_blue" -->
+<!--       /> -->
+<!--    <Button  -->
+<!--       android:layout_width="120dp" -->
+<!--       android:layout_height="wrap_content" -->
+<!--       android:text="本地恢复" -->
+<!--       android:id="@+id/local_recovery" -->
+<!--       android:textColor="@color/text_color_base" -->
+<!--         android:background="@drawable/btn_blue" -->
+<!--       /> -->
+                
+<!--             </LinearLayout> -->
+            
+            </LinearLayout>
+    
+    
+    <ScrollView android:id="@+id/show_backup_recovery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbars="vertical" android:layout_weight="1" android:background="@drawable/corner_bg_dash"  android:visibility="gone"  android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:layout_marginTop="10dp" >
+            <FrameLayout  android:layout_width="fill_parent" android:layout_height="wrap_content">
+                
+                  <ImageView android:id="@+id/recovery_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_cloud" android:layout_marginBottom="5dp" android:layout_marginTop="10dp"    android:layout_gravity="center"/>
+                   <ProgressBar android:id="@+id/pro_bar"
+				      android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+				      android:layout_gravity="center"
+				      android:layout_marginTop="15dp"
+				      android:visibility="gone"
+			           android:indeterminate="false" android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+			          />
+                   <ProgressBar android:id="@+id/recovery_pro_bar"
+			      android:layout_width="wrap_content"
+			      android:layout_height="wrap_content"
+			      android:indeterminate="false" android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+			      android:layout_gravity="center"
+			      android:visibility="gone"
+			     android:layout_marginTop="15dp"
+			      />
+                    <Button android:layout_gravity="right" android:layout_marginRight="10dp" android:layout_marginTop="5dp"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消备份" android:id="@+id/cancel_backup" android:layout_marginBottom="20dp" android:visibility="gone" android:textSize="13sp" android:background="@drawable/btn_login_account"/>
+           </FrameLayout>
+      
+        
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" >
+            
+           <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal" android:id="@+id/ln_set_account"  android:visibility="gone" android:layout_marginTop="5dp">
+               <TextView  android:id="@+id/tv_tips_top_backup"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请先填写您的个人资料完成备份："  android:textColor="@color/text_color_gray" android:layout_marginBottom="20dp" android:textSize="17sp"/> 
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="15dp" >
+                  <TextView android:layout_width="70dp" android:gravity="right" android:layout_height="wrap_content" android:text="用户名:		"  android:textColor="@color/text_color_gray" android:textSize="15sp"/>
+                  <EditText android:id="@+id/recovery_email" android:layout_width="220dp" android:padding="5dp"  android:layout_height="40dp"  android:hint="请输入邮箱" android:background="@drawable/edittext_bg"  android:textColor="@color/input_email" android:textSize="14sp"/>
+               </LinearLayout>
+        
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"  android:gravity="center_vertical" android:layout_marginBottom="15dp" >
+                  <TextView android:layout_width="70dp"  android:gravity="right" android:layout_height="wrap_content" android:text="密 码:		"  android:textColor="@color/text_color_gray" android:textSize="15sp" />
+                  <EditText android:id="@+id/recovery_password"  android:layout_width="220dp" android:password="true" android:padding="5dp"  android:layout_height="40dp" android:background="@drawable/edittext_bg" />
+               </LinearLayout>
+                <LinearLayout  android:id="@+id/re_confirm_password"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"  android:gravity="center_vertical" android:layout_marginBottom="15dp" android:visibility="gone">
+                  <TextView android:layout_width="70dp" android:gravity="right" android:layout_height="wrap_content" android:text="确认密码:		"  android:textColor="@color/text_color_gray" android:textSize="15sp" />
+                  <EditText android:id="@+id/confirm_recovery_password"  android:layout_width="220dp" android:password="true" android:padding="5dp"  android:layout_height="40dp" android:background="@drawable/edittext_bg" />
+               </LinearLayout>
+               <LinearLayout 
+                   android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="15dp"
+                   android:orientation="vertical"
+                   >
+                   <Button android:id="@+id/recovery_confirm" android:layout_width="120dp" android:layout_height="40dp" android:text="完成备份" android:background="@drawable/btn_backup_finish" android:textColor="#ffffff"  android:textSize="18sp" android:visibility="gone"/>
+                  
+                  
+                   
+                    <Button android:id="@+id/switching_account" android:layout_width="120dp" android:layout_height="40dp" android:text="切换账号" android:background="@drawable/btn_login_account" android:textColor="@color/text_color_base"  android:textSize="18sp" android:visibility="gone" android:layout_marginTop="5dp"/>
+                    
+                     <Button android:id="@+id/account_login" android:layout_width="120dp" android:layout_height="40dp" android:text="登录" android:background="@drawable/btn_backup_finish" android:textColor="#ffffff"  android:textSize="18sp" android:visibility="gone" android:layout_marginTop="5dp"/>
+                   
+                   <Button android:id="@+id/create_account" android:layout_width="120dp" android:layout_height="40dp" android:text="新建账号" android:background="@drawable/btn_login_account" android:textColor="@color/text_color_base" android:textSize="18sp"   android:visibility="gone" android:layout_marginTop="5dp"/>
+               </LinearLayout>
+               
+           </LinearLayout>
+        
+           <LinearLayout android:id="@+id/show_select_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal" android:visibility="gone">
+               <TextView android:layout_marginLeft="20dp" android:id="@+id/tv_top_backup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="即将对你本机的以下数据进行备份" android:textColor="@color/text_color_gray" android:textSize="16sp" android:layout_marginBottom="5dp" android:gravity="left"/>
+               <CheckBox  android:layout_marginLeft="20dp"  style="@style/MyCheckBox"  android:id="@+id/backup_contacts" android:layout_width="180dp" android:layout_height="wrap_content" android:text="			联系人"  android:textColor="@color/text_color_gray" android:textSize="18sp" />
+               <CheckBox  android:layout_marginLeft="20dp"  style="@style/MyCheckBox" android:id="@+id/backup_message" android:layout_width="180dp" android:layout_height="wrap_content"   android:text="			短 信"  android:textColor="@color/text_color_gray" android:textSize="18sp" android:layout_marginTop="3dp" />
+
+               <CheckBox
+                   android:id="@+id/backup_remind"
+                   android:layout_width="180dp"
+                   android:layout_height="wrap_content"
+                   style="@style/MyCheckBox"
+                   android:text="			提醒"
+                   android:layout_marginTop="3dp" 
+                    android:layout_marginLeft="20dp"
+                   android:textColor="@color/text_color_gray" android:textSize="18sp" />
+
+               <CheckBox android:layout_marginLeft="20dp"  android:layout_marginTop="3dp"  style="@style/MyCheckBox"  android:id="@+id/backup_call_record" android:layout_width="180dp" android:layout_height="wrap_content" android:text="			通话记录"  android:textColor="@color/text_color_gray" android:textSize="18sp" />
+               <CheckBox android:layout_marginLeft="20dp"   android:layout_marginTop="3dp"  style="@style/MyCheckBox" android:id="@+id/backup_collection" android:layout_width="180dp" android:layout_height="wrap_content" android:text="			短信收藏箱" android:textColor="@color/text_color_gray" android:textSize="18sp"  />
+            
+                 <TextView   android:id="@+id/tv_tips_bottom" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_backup_cloud" android:textColor="@color/text_color_gray" android:textSize="16sp"  android:layout_marginLeft="20dp" />
+                  <TextView   android:id="@+id/tv_tips_bottom_add" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="相关数据进行备份" android:textColor="@color/text_color_gray" android:textSize="16sp"  android:layout_marginLeft="20dp" />
+               
+                 
+               
+             <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button android:id="@+id/btn_ok" android:layout_marginTop="10dp" android:layout_width="120dp" android:layout_height="40dp" android:background="@drawable/btn_blue" android:text="备份到云端"  android:textColor="#ffffff"  android:visibility="gone" android:textSize="17sp"/>
+                    <Button android:id="@+id/btn_cancle" android:layout_width="120dp" android:layout_height="40dp" android:background="@drawable/btn_orange" android:text="取 消"  android:textColor="#ffffff" android:layout_marginTop="10dp" android:visibility="gone" android:textSize="17sp"/>
+                  
+             </LinearLayout>
+               
+              
+           </LinearLayout>
+           <LinearLayout android:id="@+id/recovery_select_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal" android:visibility="gone">
+               <TextView android:textSize="16sp" android:id="@+id/tv_tips_top_recovery" android:layout_width="fill_parent" android:gravity="left" android:layout_height="wrap_content" android:text="请选择您要恢复的部分："   android:textColor="@color/text_color_gray" android:layout_marginBottom="5dp"  android:layout_marginLeft="20dp"/>
+               <CheckBox  android:textSize="18sp" style="@style/MyCheckBox"  android:id="@+id/recovery_contacts" android:layout_width="180dp" android:layout_height="wrap_content" android:text="			联系人"  android:textColor="@color/text_color_gray"/>
+               <CheckBox  android:textSize="18sp" android:layout_marginTop="3dp"   style="@style/MyCheckBox" android:id="@+id/recovery_message" android:layout_width="180dp" android:layout_height="wrap_content" android:text="			短 信"  android:textColor="@color/text_color_gray"  />
+
+               <CheckBox
+                   android:id="@+id/recovery_remind"
+                   android:layout_width="180dp"
+                   android:layout_height="wrap_content"
+                   style="@style/MyCheckBox"
+                   android:text="			提醒"
+                   android:layout_marginTop="3dp" 
+                   android:textSize="18sp"
+                   android:textColor="@color/text_color_gray" />
+
+               <CheckBox  android:textSize="18sp" android:layout_marginTop="3dp"  style="@style/MyCheckBox"  android:id="@+id/recovery_call_record" android:layout_width="180dp" android:layout_height="wrap_content" android:text="			通话记录"  android:textColor="@color/text_color_gray" />
+               <CheckBox   android:textSize="18sp" android:layout_marginTop="3dp"  style="@style/MyCheckBox" android:id="@+id/recovery_collection" android:layout_width="180dp" android:layout_height="wrap_content"   android:text="			短信收藏箱" android:textColor="@color/text_color_gray"  />
+               <TextView   android:id="@+id/tv_tips_bottom_recovery"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_recovery_cloud" android:textSize="16sp" android:textColor="@color/text_color_gray"  android:layout_marginLeft="20dp" />
+               <TextView   android:id="@+id/tv_tips_bottom_recovery_add"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tv_recovery_cloud_add" android:textSize="16sp" android:textColor="@color/text_color_gray"  android:layout_marginLeft="20dp" />
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button android:id="@+id/recovery_ok" android:layout_marginTop="5dp" android:layout_width="120dp" android:layout_height="40dp" android:background="@drawable/btn_blue" android:text="从云端恢复"  android:textColor="#ffffff" android:layout_marginBottom="10dp" android:visibility="gone"/>
+                    <Button android:id="@+id/bt_recovery_finish" android:layout_width="120dp" android:layout_height="40dp" android:background="@drawable/btn_blue" android:text="完成"  android:textColor="#ffffff" android:layout_marginBottom="10dp" android:visibility="gone"/>
+               
+                    </LinearLayout>
+           </LinearLayout>
+           
+        </FrameLayout>
+        
+    </LinearLayout>
+    
+    </ScrollView>
+   
+     <ScrollView   android:id="@+id/local_backup_recovery"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbars="vertical" android:layout_weight="1" android:background="@drawable/corner_bg_dash"  android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+    <LinearLayout
+    android:id="@+id/local_backup_recovery_ly"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<!--     <LinearLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="vertical" > -->
+        
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_gravity="center"
+		        android:background="@drawable/backup_recovery_bg" >
+           
+                <ProgressBar
+                   android:layout_marginLeft="10dp"
+	                android:id="@+id/local_pro_bar"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:indeterminate="false"
+	                android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+	               	android:layout_centerInParent="true"
+	               	android:visibility="gone"/>
+                
+                <ImageView android:id="@+id/top_img"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"/>
+                
+           </RelativeLayout>
+        
+       	 	<TextView
+                android:id="@+id/tips_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+            	android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/text_color_gray" />
+        
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+           
+            <CheckBox
+                android:id="@+id/local_backup_contacts"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   联系人"
+                android:checked="true"
+                android:textSize="18sp"
+                android:textColor="@color/text_color_gray" />
+
+            <CheckBox
+                android:id="@+id/local_backup_message"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   短 信"
+                android:checked="true"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_color_gray" />
+
+            <CheckBox
+                android:id="@+id/local_backup_remind"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   提醒"
+                android:checked="true"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_color_gray"  />
+
+            <CheckBox
+                android:id="@+id/local_backup_calllog"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   通话记录"
+                android:checked="true"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_color_gray"  />
+
+            <CheckBox
+                android:id="@+id/local_backup_collection"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   短信收藏箱"
+                android:checked="true"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"
+                android:textColor="@color/text_color_gray"  />
+
+        </LinearLayout>
+        
+        <LinearLayout
+                android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+                <TextView
+                android:id="@+id/save_url"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="以保存为："
+                android:textColor="#90303030"
+                android:textSize="16sp" 
+                android:visibility="gone"/>
+            
+            <TextView
+                android:id="@+id/local_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="点击‘备份到本地’后即将对您本机的相关数据进行备份："
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp" />
+            
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            
+                <Button
+                    android:id="@+id/btn_local_backup"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_blue"
+                    android:textSize="17sp"
+                    android:text="备份到本地"
+                    android:textColor="#ffffff"/>
+                
+                 <Button
+                    android:id="@+id/btn_local_recovery"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_orange"
+                    android:textSize="17sp"
+                    android:text="从本地恢复"
+                    android:visibility="gone"
+                    android:textColor="#ffffff"/>
+                 
+                <Button
+                    android:id="@+id/btn_backup_cancel"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_orange"
+                    android:textSize="17sp"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_backup_finish"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/backup_recovery_finish"
+                    android:text="完成"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone" />
+                
+                </LinearLayout>
+            </LinearLayout>
+        
+<!--     </LinearLayout> -->
+
+</LinearLayout>
+</ScrollView>
+    
+</LinearLayout>

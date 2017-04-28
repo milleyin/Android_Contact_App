@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+  <LinearLayout 
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="5dp"  >
+        <ImageView android:layout_width="55dp" android:layout_height="55dp" android:src="@drawable/default_contact" />
+        <TextView android:id="@+id/tv_strange_number"  android:textColor="@color/text_color_base" android:layout_marginLeft="15dp" android:textSize="@dimen/text_size_list_item_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="28740746" android:layout_weight="1"  />
+        <Button android:id="@+id/btn_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_add_new" android:layout_gravity="center_vertical" />
+    </LinearLayout>
+ 
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最近通话历史" android:textColor="@color/text_color_base" android:layout_marginBottom="5dp"  android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginTop="10dp" />
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#cecece"   />
+    <ListView android:id="@+id/lv_strange_callog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"  android:cacheColorHint="#00000000" android:divider="#cecece" android:dividerHeight="1px" android:listSelector="#00000000"  ></ListView>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_horizontal" android:layout_marginBottom="15dp" >
+        <Button android:id="@+id/btn_send_sms" android:drawableLeft="@drawable/ic_sms" android:paddingLeft="10dp" android:layout_width="120dp" android:layout_height="40dp" android:text="发短信" android:layout_marginRight="15dp" android:background="@drawable/btn_blue" android:textColor="#ffffff"   />
+        <Button android:id="@+id/btn_make_call" android:layout_width="120dp" android:drawableLeft="@drawable/ic_phone" android:paddingLeft="10dp"  android:layout_height="40dp" android:text="打电话" android:layout_marginRight="15dp" android:background="@drawable/btn_blue" android:textColor="#ffffff"  />
+    </LinearLayout>
+  </LinearLayout>
+    
+    <ListView android:id="@+id/lv_contacts" android:visibility="gone" android:background="#ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/style_my_listView" ></ListView>
+    
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+     <Button android:id="@+id/btn_left_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_left_contact_click" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" ></Button>
+    <TextView android:id="@+id/tv_name" android:layout_centerInParent="true"  android:gravity="center" android:textColor="#ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="全部联系人" android:textSize="14sp" android:singleLine="true" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/btn_left_contact" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/add_contact" />
+    <Button android:id="@+id/add_contact" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:layout_alignParentRight="true"  android:layout_marginTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_add_contact_click"/>
+     <Button android:id="@+id/btn_contact_search" android:layout_toLeftOf="@id/add_contact"  android:layout_width="wrap_content"  android:layout_marginTop="3dp" android:layout_height="wrap_content" android:background="@drawable/btn_contact_search_click"/>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+    
+    
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" >
+        <RelativeLayout
+    	 android:id="@+id/team_singlechat_id_listiteam" 
+    	 android:clickable="false"
+    	 android:layout_alignParentLeft="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/name_number"
+	    android:textColor="@color/text_color_base"
+	    android:visibility="gone"
+	        />
+	<ImageView android:layout_centerVertical="true"
+		android:layout_marginLeft="10dip" android:layout_height="55dp"
+		android:layout_width="55dp"
+		android:layout_below="@id/name_number"
+		android:visibility="gone"
+		android:src="@drawable/add_buttom"
+		android:id="@+id/team_singlechat_id_listiteam_headicon" />
+
+	<TextView 
+		android:id="@+id/team_singlechat_id_listiteam_message"
+		android:layout_toRightOf="@id/team_singlechat_id_listiteam_headicon"
+		android:layout_centerVertical="true"
+		android:textColor="@color/text_color_base"
+		android:layout_below="@id/name_number"
+		android:includeFontPadding="false"
+		android:textStyle="normal" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/today_date"
+	    android:text="今天"
+	    android:layout_toRightOf="@id/team_singlechat_id_listiteam_message"
+	    />
+	<TextView 
+	    
+	     android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/today_time"
+	    android:text="16:40"
+	    android:layout_toRightOf="@id/team_singlechat_id_listiteam_message"
+	    android:layout_below="@id/today_date"
+	    />
+	</RelativeLayout>
+    </RelativeLayout>
+
+	<CheckBox android:id="@+id/checkBoxEdit" android:focusable="false" android:layout_marginLeft="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyCheckBox" android:layout_gravity="center_vertical" android:layout_alignParentRight="true" android:layout_toRightOf="@id/team_singlechat_id_listiteam" />
+</LinearLayout>

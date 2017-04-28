@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/fn_call_logs" android:layout_width="fill_parent" android:layout_height="fill_parent"  xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/base_bg"
+        android:layout_height="@dimen/top_height"
+        android:padding="3dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_centerInParent="true" >
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" android:layout_marginRight="10dp" />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未接 " android:layout_marginRight="10dp" />
+        </LinearLayout>
+        
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清空" android:layout_alignParentRight="true"  />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recent_calllog"
+        android:layout_width="fill_parent"
+        android:background="#ececec"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+         >
+        
+        <ImageView android:id="@+id/img_top_recent_call" android:layout_centerVertical="true" android:layout_alignParentLeft="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/top_recent_call" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近通话"
+            android:layout_toRightOf="@id/img_top_recent_call"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"  />
+
+         
+        <ImageButton
+            android:id="@+id/recent_call_img"
+            android:clickable="true"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/open_recent_call" />
+            
+              <ImageButton
+            android:id="@+id/img_goto_search"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/recent_call_img"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/search_calllog"
+            />
+            
+    </RelativeLayout>
+    
+    <RelativeLayout android:visibility="gone" android:id="@+id/calllog_search_ly"  android:padding="5dp"  android:layout_width="fill_parent" android:layout_height="40dp" android:background="#ffffff" >
+		<EditText android:paddingLeft="10dp" android:layout_height="wrap_content" android:layout_width="340dp" android:layout_centerInParent="true" android:id="@+id/search_calllog" android:hint=" 请输入姓名或者号码" android:background="@drawable/et_search_calllog" android:textColor="#a4a4a4" android:textSize="25px"/> 
+		<Button android:layout_width="wrap_content" android:layout_height="18dp" android:layout_centerVertical="true" android:layout_marginRight="8dp" android:id="@+id/search_img"  android:layout_alignRight="@+id/search_calllog" android:layout_marginBottom="10dp"  android:background="@drawable/search_calllog" />
+		<LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center" android:layout_centerVertical="true" android:padding="5dp" android:layout_marginRight="8dp" android:layout_centerInParent="true" android:id="@+id/delete_search_info"  android:layout_alignRight="@+id/search_calllog" android:layout_alignBottom="@+id/search_calllog">
+			<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear_search_info" />
+		</LinearLayout>
+	</RelativeLayout>
+	
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#cecece" />
+    
+    <ListView
+        android:id="@+id/lv_top_10_calls"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        style="@style/style_my_listView" />
+
+</LinearLayout>
+    
+   <include layout="@layout/dialing_number_association" /> <!-- 拨号联想 -->
+   <include layout="@layout/dialing_panel" /> <!-- 拨号盘 -->
+   <include layout="@layout/huxing_dialing_panel" /> <!-- 弧形拨号盘 -->
+    
+</FrameLayout>
+    
+

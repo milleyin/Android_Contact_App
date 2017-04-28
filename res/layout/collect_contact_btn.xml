@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/collect_bg_normal"
+    android:orientation="horizontal" android:layout_marginRight="-1px" >
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/text_color_dialing_panel_big" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/text_color_dialing_panel_small"  android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="16sp" android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+       
+</LinearLayout>

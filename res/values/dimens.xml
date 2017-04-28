@@ -1,0 +1,43 @@
+<resources>
+    <dimen name="bottom_padding">50dp</dimen>
+    
+    <dimen name="text_size_list_item_big" >18sp</dimen>
+    <dimen name="text_size_list_item_backup" >6sp</dimen>
+    <dimen name="text_size_list_item_small" >16sp</dimen>
+    
+    <dimen name="dialing_panel_line_height" >50dp</dimen>
+    
+    <dimen name="normal_top_verscroller_heigth">30dp</dimen>
+    <dimen name="message_top_verscroller_heigth">50dp</dimen>
+    
+    <dimen name="menu_height" >50dp</dimen>
+    
+    <dimen name="contact_item_heigth" >60dp</dimen> <!-- 全部联系人 每行联系人的高度 -->
+    
+    <!-- 联系人二维码小图的  大小 -->
+    <dimen name="crcode_size_small" >60dp</dimen>
+    <dimen name="crcode_size_big" >250dp</dimen>
+    
+    
+    <dimen name="list_position_size" >70dp</dimen>
+    
+    <dimen name="line_heigh">1dp</dimen>
+    
+    <dimen name="dialing_nume_text_big" >20dp</dimen>
+    <dimen name="dialing_nume_text_mid" >14dp</dimen>
+    <dimen name="dialing_nume_text_small" >10dp</dimen>
+    
+    <dimen name="dialing_big" >32sp</dimen>
+    <dimen name="dialing_small" >16sp</dimen>
+    
+    <dimen name="pop_width" >120dp</dimen>
+    
+    <dimen name="wheel_size" >14dp</dimen>
+
+    <dimen name="target_dis" >42dp</dimen>
+    
+    <dimen name="ln_ck_margin" >50dp</dimen>
+    
+    <dimen name="top_height">45dp</dimen>
+    
+</resources>

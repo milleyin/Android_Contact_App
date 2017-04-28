@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:visibility="gone" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+        
+   <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_height"
+    android:background="@color/base_bg"
+    android:orientation="horizontal" >
+    
+    <Button android:id="@+id/btn_change"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换" android:layout_centerVertical="true" ></Button>
+    <TextView android:id="@+id/tv_name" android:layout_width="180dp" android:ellipsize="end" android:layout_centerInParent="true"  android:gravity="center" android:textColor="#ffffff" android:layout_height="wrap_content"  android:text="全部联系人" android:textSize="14sp" android:singleLine="true" />
+    <Button android:id="@+id/add_contact" android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:layout_alignParentRight="true"  android:layout_marginTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_add_contact_click" android:layout_centerVertical="true" />
+    <Button android:id="@+id/btn_contact_search" android:layout_toLeftOf="@id/add_contact"  android:layout_width="wrap_content"  android:layout_marginTop="3dp" android:layout_height="wrap_content" android:background="@drawable/btn_contact_search_click" android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+        
+   <com.dongji.app.ui.ScrollLayout
+        android:id="@+id/contact_scroller"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#d9d9d7"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/add_all"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="right"
+                        android:orientation="vertical" />
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/edit_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/btn_edit_contact_1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/data_save_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/set_remind"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/btn_blue"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="设置提醒"
+                        android:textColor="@color/white_color"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/save"
+                            android:layout_width="43dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/btn_blue"
+                            android:text="保存"
+                            android:textColor="@color/white_color"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/cancel"
+                            android:layout_width="43dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/btn_blue"
+                            android:text="取消"
+                            android:textColor="@color/white_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/v_line" />
+
+            <ListView
+                android:id="@+id/contact_info"
+                style="@style/style_my_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           >
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:id="@+id/ln_contact"
+                android:visibility="gone"
+                android:layout_height="fill_parent" >
+                
+                <ListView
+                android:id="@+id/lvContact"
+                style="@style/style_my_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                 />
+                
+                    <com.dongji.app.ui.SideBar
+                      android:id="@+id/sideBar"
+                      android:layout_width="20dp"
+                      android:layout_height="fill_parent"
+                      android:background="@drawable/sidebar_bg" />
+            </LinearLayout>
+         
+
+            <LinearLayout
+                android:id="@+id/ln_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#85000000"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/ed_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="请输入名称进行检索" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:alwaysDrawnWithCache="true" >
+
+                    <ListView
+                        android:id="@+id/lv_search"
+                        style="@style/style_my_listView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:alwaysDrawnWithCache="true"
+                        android:visibility="gone" >
+                    </ListView>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </com.dongji.app.ui.ScrollLayout>
+   
+</LinearLayout>

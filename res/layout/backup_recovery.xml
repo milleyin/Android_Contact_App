@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+  <Button 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="80dp"
+      android:text="一键备份"
+      android:id="@+id/onekey_backup"
+        android:textColor="@color/text_color_base"
+      />
+   <Button 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="80dp"
+      android:text="一键恢复"
+      android:id="@+id/onekey_recovery"
+        android:textColor="@color/text_color_base"
+      />
+   <TextView 
+       android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+       android:layout_marginTop="80dp"
+         android:text="提示：备份过程中，所有的备份信息将会使用您的密码进行加密，确保数据不会泄密。"
+       />
+
+</LinearLayout>

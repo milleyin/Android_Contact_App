@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="表情"
+            android:background="@drawable/remind_top_bg"
+            android:textColor="@color/text_color_base"
+            android:textSize="18sp" />
+
+           <GridView android:id="@+id/gv_expression" android:layout_width="fill_parent" android:layout_height="200dp" android:stretchMode="columnWidth" android:verticalSpacing="7dp" android:numColumns="6" ></GridView>
+           
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_expression_cancle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gary"
+                    android:text="取消"
+                    android:textColor="@color/text_color_base"
+                    android:textSize="14sp" />
+
+               <!--  <Button
+                    android:id="@+id/btn_picgroup_yes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue"
+                    android:text="保存"
+                    android:textColor="@color/white_color"
+                    android:textSize="14sp" /> -->
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

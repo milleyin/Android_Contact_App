@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ListView android:id="@+id/lvintercept" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/style_my_listView" ></ListView>
+</LinearLayout>
+
+        
+        <LinearLayout android:id="@+id/tips_top_layout" android:visibility="gone" android:background="@color/tip_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="5dp" >
+            <TextView android:id="@+id/delete_id" android:visibility="gone" android:textColor="#ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" />
+            <TextView android:id="@+id/tv_delete_tips" android:textColor="@color/text_color_base" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center"/>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" >
+                <Button android:id="@+id/btn_top_tips_yes" android:textColor="@color/text_color_base" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/btn_blue"   android:text="确定" android:layout_marginRight="20dp" />
+                <Button android:id="@+id/btn_top_tips_no" android:textColor="@color/text_color_base" android:layout_width="80dp" android:layout_height="40dp" android:background="@drawable/btn_gary"   android:text="取消" />
+            </LinearLayout>
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     <CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+         android:textColor="@color/text_color_base"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        style="@style/MyCheckBoxCircle"
+        />
+-->
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MyCheckBoxCircle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_weight="1"
+    android:paddingLeft="25dip"
+    android:singleLine="true"
+    android:textColor="@color/text_color_base"
+    android:textSize="13sp" />

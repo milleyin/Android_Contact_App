@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="fill_parent"   android:background="#ffffff" android:layout_height="fill_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/top_height"
+                        android:orientation="horizontal"
+                        android:background="@color/base_bg" >
+
+            <Button android:id="@+id/btn_back"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回" android:layout_alignParentLeft="true" />
+            
+            <TextView
+               android:id="@+id/tv_top"
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#ffffff"
+               android:text="新建联系人"
+               android:textSize="14sp" />
+
+       </RelativeLayout>
+       
+    
+    <FrameLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ln_add_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_add_contact_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/default_contact" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal" >
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="38dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/et_bg"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_list_item_big"
+                            android:hint="请输入姓名" />
+
+                        <Button
+                            android:id="@+id/btn_add_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/btn_gary"
+                            android:text="完成"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color_base" />
+
+                        <Button
+                            android:id="@+id/btn_add_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/btn_gary"
+                            android:text="取消"
+                            android:padding="5dp"
+                            android:textColor="@color/text_color_base" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_company"
+                        android:layout_width="fill_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/et_bg"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_list_item_big"
+                        android:hint="请输入公司名" />
+
+                    <TextView
+                        android:id="@+id/et_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_bg"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="设置生日"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_add_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/mobileContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homePhoneContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emailContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addressContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/websitesContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/noteContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/contact_detail_middle_left"
+                    android:gravity="center"
+                    android:text="职业"
+                    android:textColor="@color/text_color_list_item"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/contact_detail_middle_right"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_pick_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_gary"
+                        android:text="编辑"
+                        android:textColor="@color/text_color_base" />
+
+                    <TextView
+                        android:id="@+id/tv_job"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/contact_detail_bottom_left"
+                    android:gravity="center"
+                    android:text="分组"
+                    android:textColor="@color/text_color_list_item"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/contact_detail_bottom_right"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical" >
+
+                    <Button
+                        android:id="@+id/btn_pick_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_gary"
+                        android:text="编辑"
+                        android:textColor="@color/text_color_base" />
+
+                    <TextView
+                        android:id="@+id/tv_group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/btn_add_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_detail_add_line" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_encryption"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/btn_blue"
+                android:text="加密联系人"
+                android:textSize="14sp"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ln_detail_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_contact" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:maxLines="3"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_detail_name"
+                        android:textColor="@color/text_color_list_item"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail_constellations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_detail_birthday"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/tv_detail_birthday"
+                        android:textColor="@color/text_color_list_item"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_detail_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_list_item"
+                    android:textSize="@dimen/text_size_list_item_big"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_cr_code"
+                    android:layout_width="@dimen/crcode_size_small"
+                    android:layout_height="@dimen/crcode_size_small" />
+
+                <Button
+                    android:id="@+id/btn_my_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_contact_card"
+                    android:textColor="@color/text_color_base"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_edit_contact_click" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/contact_item_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/intercept_top_selected_bg"
+                android:text="联系人详情"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/contact_item_calls"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/intercept_top_normal_bg"
+                android:text="通讯记录"
+                android:textColor="@color/text_color_base"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/contact_item_collect_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/intercept_top_normal_bg"
+                android:text="短信收藏"
+                android:textColor="@color/text_color_base"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/contact_item_remind"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/intercept_top_normal_bg"
+                android:text="事件提醒"
+                android:textColor="@color/text_color_base"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:background="#acacac" />
+
+        <LinearLayout
+            android:id="@+id/ln_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <include
+                android:id="@+id/item_detail"
+                layout="@layout/contact_detail_item_detail" />
+
+            <include
+                android:id="@+id/item_history"
+                layout="@layout/contact_detail_item_history" />
+
+            <include
+                android:id="@+id/item_collect"
+                layout="@layout/contact_detail_item_collect" />
+
+            <include
+                android:id="@+id/item_remind"
+                layout="@layout/contact_detail_item_remind" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_delete_ok"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_orange"
+                android:text="删除(0)"
+                 android:textColor="#ffffff"
+                 android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_delete_cancle"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gary"
+                android:text="取消"
+                android:textColor="#000000"
+        android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
+

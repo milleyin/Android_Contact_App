@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout android:layout_width="300dp" android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp" android:orientation="vertical" android:background="@drawable/dialog_bg" android:layout_margin="5dp" >
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  >
+           <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请选择你的操作" android:layout_weight="1" android:textColor="@color/text_color_base" android:textSize="18sp" />
+           <Button android:id="@+id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:background="@drawable/close"  />
+        </LinearLayout>
+
+        <TextView android:id="@+id/tv_messge" android:textColor="@color/text_color_base" android:textSize="18sp" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:layout_marginBottom="5dp" >
+<!--            <Button android:id="@+id/btn_call" android:layout_width="fill_parent" android:layout_height="40dp" android:text="打电话" android:layout_weight="1" android:background="@drawable/btn_base" android:layout_marginRight="10dp" android:textColor="@color/text_color_base" /> -->
+<!--            <Button android:id="@+id/btn_send_sms" android:layout_width="fill_parent" android:layout_height="40dp" android:text="发短信 " android:layout_weight="1" android:background="@drawable/btn_base"  android:textColor="@color/text_color_base" /> -->
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

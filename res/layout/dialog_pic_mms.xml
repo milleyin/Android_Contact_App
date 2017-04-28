@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="添加图片"
+            android:textSize="18sp"
+            android:background="@drawable/remind_top_bg"
+            android:textColor="@color/text_color_base"
+             />
+
+           
+           <LinearLayout android:id="@+id/r_item_take_photo" android:background="@android:drawable/list_selector_background" android:layout_width="fill_parent" android:layout_height="40dp" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:gravity="center" android:layout_marginTop="20dp" android:layout_marginBottom="10dp"  >
+               <ImageView  android:layout_width="wrap_content"  android:layout_height="wrap_content" android:src="@drawable/go_to_take_photo" android:layout_marginRight="10dp" />               <TextView   android:textColor="#666666"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拍照" android:textSize="16sp" />
+           </LinearLayout>
+           
+           
+           <LinearLayout android:id="@+id/r_item_from_gallery" android:background="@android:drawable/list_selector_background" android:layout_width="fill_parent" android:layout_height="40dp" android:orientation="horizontal" android:gravity="center" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" >
+               <ImageView  android:layout_width="wrap_content"  android:layout_height="wrap_content" android:src="@drawable/go_to_gallery" android:layout_marginRight="10dp" />
+               <TextView android:layout_alignParentLeft="true"    android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="相册" android:textSize="16sp" />
+           </LinearLayout>
+           
+           
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_pic_mms_cancle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gary"
+                    android:text="取消"
+                    android:textColor="@color/text_color_base"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:id="@+id/main_layout"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#454545" >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提醒详情" android:layout_centerInParent="true" />
+        <Button android:id="@+id/btn_delete_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" android:layout_alignParentRight="true"  />
+        <Button android:id="@+id/btn_detail_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详情" android:layout_toLeftOf="@id/btn_delete_remind"  />
+    </RelativeLayout>
+            
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+             <TextView android:text="联系人:" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+           </LinearLayout>
+           
+            
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+             <TextView android:text="参与人:" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+           </LinearLayout>
+           
+            
+           <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+              <TextView android:text="1-1至1-2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+              <TextView android:text="提醒:1 天" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+           </RelativeLayout>
+
+           <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+              <TextView android:text="重复:每天" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+              <TextView android:text="重复频率:1 天" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+           </RelativeLayout>
+    
+           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提醒次数" />
+           <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+              <TextView android:text="重复时间:  周一  周二   周三" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+           </RelativeLayout>
+           
+           <TextView android:text="与XXX确定项目进度" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    
+</LinearLayout>

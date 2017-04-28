@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout 
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            >
+            <ImageView  android:layout_width="55dp"
+            android:layout_height="55dp" android:id="@+id/edit_contact_image" android:src="@drawable/default_contact"/>
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/edit_contact_name"
+            android:text="bob"
+            android:layout_gravity="center_vertical"
+             android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_base"/>
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/edit_contact_number"
+            android:text="18676369167"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_base"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tips_add_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:gravity="center"
+            android:orientation="vertical" 
+            >
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="发送时间为："
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color_gray"/>
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/edit_send_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="12sp"
+                    android:hint="2013/1/15"
+                    android:background="@drawable/edittext_bg" />
+            </LinearLayout>
+           <EditText
+               android:layout_marginTop="10dp"
+                    android:id="@+id/edit_send_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:text="hello"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="14sp"
+                    android:background="@drawable/edittext_bg" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp" >
+
+                                <Button
+                    android:id="@+id/btn_edit_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="取消"
+                    android:textSize="14sp"
+                     android:background="@drawable/btn_gary" 
+                     android:textColor="@color/text_color_base"/>
+                
+                <Button
+                    android:id="@+id/btn_edit_confirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="确定"
+                    android:textSize="14sp"
+                     android:background="@drawable/btn_blue"
+                     android:textColor="@color/white_color"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+

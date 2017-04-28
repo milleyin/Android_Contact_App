@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/dialing_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/mask_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/dialing_btn_bg_normal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_dialing_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_dialing_panel_big"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/btn_back_dialing"
+                    android:layout_width="45dp"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:src="@drawable/back_delete" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/btn_number_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="1"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="        "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_number_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="2"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABC  "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_number_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="3"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEF   "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/btn_number_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="4" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="4"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GHI  "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_number_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="5" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="5"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JKL   "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_number_6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="6" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="6"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MNO "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/btn_number_7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="7" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="7"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PQRS"
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_number_8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="8" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="8"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TUV  "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_number_9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="9" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="9"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WXYZ"
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/btn_number_xing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="*" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="*"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_number_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="0" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="0"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_number_jing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialing_btn_bg_normal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="#" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:text="#"
+                        android:textColor="@color/text_color_dialing_panel_big"
+                        android:textSize="@dimen/dialing_big"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+   "
+                        android:textColor="@color/text_color_dialing_panel_small"
+                        android:textSize="@dimen/dialing_small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_collect_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+
+        <RelativeLayout android:background="@color/base_bg" android:layout_width="fill_parent" android:layout_height="@dimen/top_height" android:orientation="horizontal"  >
+            
+            <Button android:id="@+id/btn_out_collect_contact" android:layout_alignParentLeft="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回" />
+            
+            <TextView android:layout_width="wrap_content" android:textColor="#ffffff" android:textSize="16sp" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="快捷拨号" />
+            
+            <Button android:id="@+id/btn_edit_collect_contact" android:layout_alignParentRight="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑" />
+            
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="『点击』拨打电话，『长按』添加或编辑联系人 "
+            android:textColor="#a4a4a4" />
+        
+        <include layout="@layout/fa_contact_content" />
+        
+    </LinearLayout>
+
+</FrameLayout>

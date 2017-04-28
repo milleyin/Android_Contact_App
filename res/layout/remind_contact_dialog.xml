@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+   <LinearLayout android:layout_width="300dp" android:layout_height="fill_parent"  android:background="#ffffff" android:orientation="vertical" >
+       <TextView  android:layout_width="fill_parent" android:layout_height="40dp" android:textSize="16sp" android:gravity="center_vertical" android:text="请选择联系人" android:paddingLeft="10dp" android:textColor="@color/text_color_base" android:layout_marginBottom="5dp" android:background="@drawable/remind_top_bg" />
+       <LinearLayout android:layout_width="fill_parent" android:layout_height="400dp" android:orientation="horizontal" >
+           <ListView android:id="@+id/lv_contact" android:layout_width="fill_parent" android:layout_height="400dp" android:layout_weight="1" style="@style/style_my_listView" ></ListView>
+<!--            <com.dongji.app.ui.SideBar android:id ="@+id/sideBar"  android:layout_height="fill_parent"   android:layout_width="20dp"  android:layout_gravity="right|center_vertical" android:background="@drawable/sidebar_bg"/> -->
+       </LinearLayout>
+<!--        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" > -->
+	           <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="3dp" android:layout_marginBottom="5dp" >
+	                <Button android:id="@+id/btn_pick_contact_cancle"  android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="40dp" android:text="取消" android:layout_marginLeft="5dp" android:textColor="@color/text_color_base" android:textSize="14sp" android:layout_marginRight="5dp" android:background="@drawable/btn_gary" />
+	               	               <Button android:id="@+id/btn_pick_contact_ok" android:layout_width="fill_parent" android:layout_weight="1"  android:layout_height="40dp" android:text="保存" android:layout_marginLeft="5dp" android:textColor="@color/white_color" android:textSize="14sp" android:layout_marginRight="5dp" android:background="@drawable/btn_blue"/>
+	           </LinearLayout>
+<!--        </LinearLayout> -->
+
+   </LinearLayout>
+</LinearLayout>

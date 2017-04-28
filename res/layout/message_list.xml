@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:visibility="gone"
+    android:background="#ffffff"
+    android:layout_height="fill_parent"  >
+	
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical" >
+		
+	    <RelativeLayout  android:layout_width="fill_parent"
+                         android:layout_height="@dimen/top_height"
+                         android:background="@color/base_bg"
+                         android:orientation="horizontal" >
+                <Button android:visibility="gone" android:id="@+id/btn_top_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_left_contact_click" android:layout_centerVertical="true" android:layout_marginLeft="5dp"  ></Button>
+                <TextView android:layout_centerInParent="true"   android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="短 信 箱" android:textSize="14sp" />
+                <Button android:id="@+id/btn_new_message" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:text="新建短信" android:layout_centerVertical="true"  ></Button>
+        </RelativeLayout>
+	    
+	    <ListView android:id="@+id/lv" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/style_my_listView"  android:layout_weight="1.0" ></ListView>
+	    
+	    <include layout="@layout/tip_layout" />
+	    
+    </LinearLayout>
+</FrameLayout>

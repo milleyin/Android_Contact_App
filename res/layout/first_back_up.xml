@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tips_top_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp" >
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/text_color_base"
+                android:text="为确保数据的完整，请勿取消操作。"/>
+            
+                         <LinearLayout
+                             android:id="@+id/first_backup_ly"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+	             <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="bottom"
+	                android:orientation="vertical" >
+	
+					<TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textSize="18sp"
+		                android:textColor="@color/text_color_gray"
+		                android:text=" ● 联系人"/>
+					<TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textSize="18sp"
+		                android:textColor="@color/text_color_gray"
+		                android:layout_marginTop="10dp"
+		                android:text=" ● 短 信"/>
+	            
+	            </LinearLayout>
+	            
+					 <ProgressBar
+                   android:layout_marginLeft="70dp"
+	                android:id="@+id/first_pro_bar" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:indeterminate="false"
+	                android:indeterminateDrawable="@drawable/dialog_style_xml_icon"/>            
+            </LinearLayout>
+               
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/text_color_gray" 
+                android:text="已成功备份至：SDcard\DJ通讯录\备份"
+                android:visibility="gone"/>
+            
+<!--              <LinearLayout -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:gravity="bottom" -->
+<!--                 android:orientation="horizontal" > -->
+               
+<!--                   <ProgressBar  -->
+<!--                       android:id="@+id/first_pro_bar"  -->
+<!--                       android:layout_width="fill_parent"  -->
+<!--                       android:layout_height="wrap_content"  -->
+<!--                       android:layout_weight="1" -->
+<!--                       android:progressDrawable="@drawable/progress_bg"   -->
+<!--                       style="?android:attr/progressBarStyleHorizontal" -->
+<!--                       android:background="@drawable/progress_normal_bg"   -->
+<!--                       android:max="100"  /> -->
+                    
+<!--                    <TextView   -->
+<!--                        android:layout_width="wrap_content"  -->
+<!--                        android:layout_height="wrap_content"  -->
+<!--                        android:id="@+id/finish_tips"  -->
+<!--                        android:textSize="16sp" -->
+<!--                 	   android:textColor="@android:color/black"  -->
+<!--                        android:text="完成" -->
+<!--                        android:visibility="gone"/> -->
+                 
+<!--              </LinearLayout> -->
+            
+            
+             
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_blue"
+                    android:layout_gravity="center"
+                    android:text="完成"
+                    android:textSize="17sp"
+                    android:textColor="@color/white_color" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

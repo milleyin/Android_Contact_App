@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="5dp">
+    
+
+          <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" >
+        
+        <LinearLayout android:id="@+id/tips_add_layout" android:padding="25dp" android:background="@drawable/dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/tv_top_tips" android:textColor="@color/text_color_base" android:textSize="16sp" android:layout_marginLeft="0dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="新建记事本" />
+           	<LinearLayout android:layout_width="fill_parent" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="5dp" >
+<!--             	<TextView android:id="@+id/content_tips" android:textColor="@color/text_color_base" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:text="关键字" /> -->
+<!--             	<EditText android:id="@+id/content" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="35dp" android:hint="请输入关键字" android:background="@drawable/et_bg"/> -->
+            	<EditText android:id="@+id/content" android:layout_width="fill_parent" android:padding="10dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="100dp" android:hint="请输入您想记录的内容" android:background="@drawable/notepad_bg" android:gravity="top|left" android:textColor="#6a6a6a" android:textSize="14sp" android:maxLines="10"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal" android:gravity="center" >
+                <Button android:id="@+id/btn_add_tips_no" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="40dp" android:background="@drawable/btn_gary" android:text="取消" android:textSize="14sp" android:textColor="@color/text_color_base" />
+                <Button android:id="@+id/btn_add_tips_yes" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="40dp" android:background="@drawable/btn_blue" android:text="保存" android:textSize="14sp" android:textColor="@color/white_color" android:layout_marginLeft="10dp" />
+                
+                
+                
+                
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

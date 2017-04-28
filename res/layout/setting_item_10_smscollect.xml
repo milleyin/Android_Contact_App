@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_height"
+    android:orientation="horizontal"
+    android:background="@color/base_bg" >
+
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="短信收藏箱"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    
+    
+    <LinearLayout   android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal"  android:background="#d9d9d7" android:layout_weight="1"   >
+    
+    <LinearLayout android:layout_width="100dp" android:layout_height="fill_parent" android:orientation="vertical" android:paddingTop="5dp"  >
+       <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"  android:layout_weight="1" >
+          <LinearLayout android:id="@+id/add_all" android:layout_width="fill_parent" android:layout_height="fill_parent"  android:orientation="vertical" android:gravity="right"  />
+       </ScrollView>
+    </LinearLayout>
+ 	
+    <FrameLayout 
+        android:layout_width="wrap_content" android:layout_height="fill_parent">
+    
+        
+	 <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:layout_marginLeft="0dp"  android:layout_weight="1" >
+	        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="horizontal" android:paddingLeft="10dp" android:background="@drawable/remind_top_bg" >
+		        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/remind_list_show" android:layout_gravity="center_vertical"  />
+		    	<TextView android:id="@+id/contact_title"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_color_base" android:layout_marginLeft="5dp" android:layout_gravity="center_vertical"  />
+	    	</LinearLayout>
+	    	<ListView  android:id="@+id/contact_info" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/style_my_listView" android:layout_weight="1" android:layout_marginLeft="5dp"/>
+	 </LinearLayout>
+	 
+	 <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_gravity="left" android:background="@drawable/v_line"/>
+	 </FrameLayout>
+	    
+</LinearLayout>
+ 
+    
+</LinearLayout>
+

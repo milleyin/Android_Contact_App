@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phoneModel">
+    	<item>X909</item>
+    	<item>L36h</item>
+		<item>X920e</item>
+		<item>K860i</item>
+		<item>K860</item>
+		<item>Ascend D2</item>
+		<item>S890</item>
+		<item>8730</item>
+		<item>Find5</item>
+		<item>S880</item>
+		<item>Grand S</item>
+		<item>Droid DNA</item>
+		<item>S880i</item>
+		<item>L35h</item>
+		<item>Find 5</item>
+		<item>F100L Optimus Vu</item>
+		<item>Butterfly</item>
+		<item>GN800</item>
+		<item>U956</item>
+		<item>F200</item>
+		<item>9930</item>
+		<item>i9082</item>
+		<item>9900</item>
+		<item>8950</item>
+		<item>S2005A</item>
+		<item>U935</item>
+		<item>P895</item> 
+		<item>Streak</item>
+		<item>W990</item>
+		<item>W710</item>
+		<item>V987</item>
+		<item>I9080</item>
+		<item>Y900</item>
+		<item>SH530U</item>
+		<item>SH930W</item>
+		<item>U887</item>
+		<item>Xperia 5R</item>
+		<item>EG960</item>
+		<item>Y710</item>
+		<item>V8300</item>
+		<item>Xperia 5</item>
+		<item>TBW5933</item>
+		<item>A8B+</item>
+		<item>V887</item>
+		<item>ViewPhone 5e</item>
+		<item>D920</item>
+		<item>Mini 5</item>
+		<item>Mi Pad</item>
+		<item>TE 4</item>
+		<item>i60</item>
+		<item>Light Tab 2</item>
+		<item>Mix X5</item>
+		<item>A8B+</item>
+		<item>A8</item>
+		<item>LG E940（Optimus G2）</item>
+		<item>X8</item>
+		<item>Y710</item>
+		<item>(X909)Find5</item>
+		<item>X920e</item>
+		<item>i9220</item>
+		<item>L36h</item>
+		<item>N719</item>
+		<item>N7100</item>
+		<item>N7102</item>
+		<item>K860i</item>
+		<item>N7108</item>
+		<item>K900</item>
+		<item>S890</item>
+		<item>N7105</item>
+		<item>K860</item>
+		<item>L35h</item>
+		<item>S880</item>
+		<item>Optimus G Pro</item>
+		<item>Grand S</item>
+		<item>N7005</item>
+		<item>Ascend mate</item>
+		<item>I889</item>
+		<item>I9228</item>
+		<item>Optimus Vu</item>
+		<item>S880i</item>
+		<item>V987</item>
+		<item>IDEOS S7 Slim</item>
+		<item>GN800</item>
+		<item>W6</item>
+		<item>Optimus Vu 2</item>
+		<item>P895</item>
+		<item>SH530U</item>
+		<item>8950</item>
+		<item>SH930W</item>
+		<item>9930</item>
+		<item>9900</item>
+		<item>W710</item>
+		<item>Vega R3</item>
+		<item>Vega S5</item>
+		<item>Vega No.6</item>
+		<item>IM-A850L</item>
+		<item>GT-I9082L</item>
+		<item>N7102</item>
+		<item>Note</item>
+		<item>Note2</item>
+		<item>Note 2</item>     
+		<item>N7100</item>
+		<item>N719</item>
+		<item>N7108</item>
+		<item>N7102</item>
+		<item>N7005</item>
+    </string-array>
+</resources>

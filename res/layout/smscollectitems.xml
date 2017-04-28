@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main_layout"
+    android:orientation="vertical" >
+    
+<!--     <FrameLayout android:layout_width="fill_parent" android:layout_height="60dp"  android:layout_marginTop="5dp" android:layout_marginBottom="5dp" > -->
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_marginTop="5dp" android:layout_marginBottom="5dp" >
+        <RelativeLayout 
+               android:layout_width="wrap_content"
+               android:padding="5dp"
+		    android:layout_height="wrap_content">
+        
+		    <TextView 
+		        android:id="@+id/collect_info"
+		        android:layout_width="wrap_content"
+		        android:textColor="#666666"
+		        android:layout_height="wrap_content"/>
+		    
+		     <TextView 
+		        android:id="@+id/collect_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#666666"
+		        android:layout_below="@id/collect_info"
+		        android:layout_alignParentRight="true"/>
+		</RelativeLayout>
+    </FrameLayout>
+    
+    <LinearLayout
+        android:id="@+id/menu"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="-50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/menu_bg"
+        android:orientation="horizontal" >
+        
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_weight="1" >
+                  <Button
+            android:id="@+id/menu_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_cotact_detail" />
+        </LinearLayout>
+        
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_weight="1" >
+                  <Button
+            android:id="@+id/menu_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false" 
+            android:background="@drawable/btn_sms_collect_repeat_click"/>
+        </LinearLayout>
+        
+          <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_weight="1"
+            >
+          <Button
+            android:id="@+id/menu_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false" 
+            android:background="@drawable/menu_delete"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

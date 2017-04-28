@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_height"
+    android:orientation="horizontal"
+    android:background="@color/base_bg" >
+
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="拦截设置"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    
+     
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="5dp" >
+        <Button android:id="@+id/phoneIntercept" android:text="电话拦截" android:textSize="13sp"  android:background="@drawable/intercept_top_selected_bg"  android:layout_width="fill_parent" android:layout_height="50dp" android:layout_weight="1" android:layout_marginLeft="3dp" android:textColor="#ffffff" />
+        <Button android:id="@+id/smsIntercept" android:text="信息拦截" android:textSize="13sp" android:textColor="@color/text_color_base"  android:background="@drawable/intercept_top_normal_bg" android:layout_width="fill_parent" android:layout_height="50dp" android:layout_weight="1" android:layout_marginLeft="3dp" />
+        <Button android:id="@+id/namelist" android:text="黑白名单" android:textSize="13sp" android:textColor="@color/text_color_base"  android:background="@drawable/intercept_top_normal_bg" android:layout_width="fill_parent" android:layout_height="50dp" android:layout_weight="1" android:layout_marginLeft="3dp" />
+        <Button android:id="@+id/keyword" android:text="关键字"  android:textSize="13sp" android:textColor="@color/text_color_base"  android:background="@drawable/intercept_top_normal_bg" android:layout_width="fill_parent" android:layout_height="50dp" android:layout_weight="1" android:layout_marginLeft="3dp" />
+        <Button android:id="@+id/interceptmode" android:text="拦截模式" android:textSize="13sp" android:textColor="@color/text_color_base"  android:background="@drawable/intercept_top_normal_bg"   android:layout_width="fill_parent" android:layout_height="50dp" android:layout_weight="1" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" />
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent" android:layout_height="1dp" android:background="#acacac" />
+    
+    <LinearLayout android:id="@+id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"  >
+    </LinearLayout>
+    
+</LinearLayout>

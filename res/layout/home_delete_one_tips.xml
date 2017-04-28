@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/dialog_bg">
+     <LinearLayout  android:padding="20dp" android:id="@+id/tips_top_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="left" >
+         <TextView android:id="@+id/tv_top_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:text="确定删除此条通话记录" android:textColor="@android:color/black" />
+<!--          <CheckBox android:layout_marginTop="10dp" android:id="@+id/top_cb" android:layout_width="wrap_content" android:textColor="#666666" style="@style/MyCheckBox" android:layout_height="wrap_content" android:text="  仅删除此条记录" android:checked="true" /> -->
+        
+         <LinearLayout  android:layout_marginTop="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="left" >
+              <Button android:id="@+id/btn_top_tips_no" android:layout_width="120dp" android:layout_height="40dp" android:textColor="@color/text_color_base" android:text="取消"  android:layout_marginRight="20dp"  android:background="@drawable/btn_gary"/>
+             <Button android:id="@+id/btn_top_tips_yes" android:layout_width="120dp" android:layout_height="40dp" android:textColor="@color/white_color" android:text="确定" android:background="@drawable/btn_blue"/>
+         </LinearLayout>
+     
+     </LinearLayout>
+       
+</RelativeLayout>

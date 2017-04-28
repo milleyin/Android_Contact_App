@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+    
+    <RelativeLayout  android:layout_width="fill_parent"
+                     android:layout_height="@dimen/top_height"
+                     android:background="@color/base_bg"
+                     android:orientation="horizontal" >
+                <TextView android:layout_centerInParent="true"   android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统设置" android:textSize="14sp" />
+    </RelativeLayout>
+        
+    
+    <ScrollView  
+    android:layout_width="fill_parent"
+    android:fadingEdge="none"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+        <TextView android:text="使用习惯" android:textSize="16sp" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base" />
+        <LinearLayout android:layout_width="80dip" android:layout_height="34dp"  android:background="@drawable/setting_setting_switch_bg"   >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_hand" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="左手" android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp"/>
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="右手" android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp" />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+        <TextView android:text="主界面的键盘"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+         <LinearLayout android:layout_width="80dip" android:layout_height="34dp" android:background="@drawable/setting_setting_switch_bg" >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="展开"  android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp" />
+                    <Button android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="收起"  android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp" />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+      <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+       
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+        <TextView android:text="联系人列表的排序方式"  android:textSize="16sp" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+        <LinearLayout android:layout_width="80dip" android:layout_height="34dp" android:background="@drawable/setting_setting_switch_bg" >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="热度" android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp"  />
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="字母" android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp" />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+      <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+      
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+        <TextView android:text="短信列表的排序方式"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+         <LinearLayout android:layout_width="80dip" android:layout_height="34dp" android:background="@drawable/setting_setting_switch_bg" >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_sms" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="热度" android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp"  />
+                    <Button android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="时间"  android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp" />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+        <TextView android:text="通话记录的排序方式"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+          <LinearLayout android:layout_width="80dip" android:layout_height="34dp" android:background="@drawable/setting_setting_switch_bg" >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_callog" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="热度"  android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp" />
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="时间" android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp"  />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+          
+        <TextView android:text="短信发送成功提醒"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+        
+        <LinearLayout android:layout_width="80dip" android:layout_height="34dp" android:background="@drawable/setting_setting_switch_bg" >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_sms_remind" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="开启"  android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp" />
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="关闭" android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp" />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+          
+        <TextView android:text="关闭全部提醒"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+        
+        <LinearLayout android:layout_width="80dip" android:layout_height="34dp" android:background="@drawable/setting_setting_switch_bg" >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_remind_all" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="启用"  android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp" />
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="禁止" android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp" />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+          
+        <TextView android:text="关闭联系人组提醒"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+        
+        <LinearLayout android:layout_width="80dip" android:layout_height="34dp" android:background="@drawable/setting_setting_switch_bg" >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_remind_group" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="启用"  android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp" />
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="禁止" android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp" />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+          
+        <TextView android:text="秘书性别"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+        
+        <LinearLayout android:layout_width="80dip" android:layout_height="34dp" android:background="@drawable/setting_setting_switch_bg" >
+            <com.dongji.app.ui.ScrollLayout android:id="@+id/sc_switch_secretary_sex" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="男"  android:paddingLeft="10dp" android:textColor="@color/base_bg" android:textSize="14sp" />
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                </LinearLayout>
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+                    <Button  android:clickable="false" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/system_setting_btn" />
+                      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:text="女" android:gravity="right" android:paddingRight="10dp"  android:textColor="@color/base_bg" android:textSize="14sp" />
+                </LinearLayout>
+                
+            </com.dongji.app.ui.ScrollLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+          
+        <TextView android:text="秘书名称"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+<!--         <EditText android:id="@+id/et_secretary_name" android:layout_width="80dp" android:layout_height="wrap_content" android:background="@drawable/et_bg"/> -->
+        <EditText android:id="@+id/et_secretary_name" android:layout_width="80dp" android:layout_height="wrap_content" android:background="@drawable/edittext_bg"  android:textColor="@color/text_color_base" />
+    </LinearLayout>
+    
+    
+        <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#acacac" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical"     android:paddingLeft="10dp"
+                  android:paddingRight="10dp" >
+          
+        <TextView android:text="生成快捷图标到桌面"  android:textSize="16sp"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_weight="1" android:gravity="left" android:textColor="@color/text_color_base"  />
+		<Button android:id="@+id/desktop_shortcut" android:layout_width="80dp" android:layout_height="wrap_content" android:text="立即生成" android:background="@drawable/btn_backup_finish" android:textColor="@color/white_color"/>        
+    </LinearLayout>
+    
+</LinearLayout>
+    
+</ScrollView>
+    
+    
+</LinearLayout>
+

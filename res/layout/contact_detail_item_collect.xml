@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55dp" android:orientation="horizontal" android:background="@drawable/contact_detail_title_bg" >
+        <ImageView android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:id="@+id/img" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/sms_collect_img" />
+        <TextView android:layout_toRightOf="@id/img" android:textColor="@color/text_color_base" android:id="@+id/tv_collect_msg_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通话记录(共6条)" android:layout_centerInParent="true" />
+        <Button android:layout_marginRight="5dip"  android:id="@+id/btn_collect_msg_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_alignParentRight="true" android:background="@drawable/menu_delete"/>
+    	<CheckBox android:layout_centerVertical="true"  android:layout_alignParentRight="true"  android:id="@+id/check_collect_all" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyCheckBox" android:layout_gravity="center_vertical" />
+    </RelativeLayout>
+    
+    <!--  
+    <ListView android:id="@+id/lv_calllogs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"  android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="10px" android:listSelector="#00000000" ></ListView>
+    -->
+    
+    <ListView android:id="@+id/lv_collect_msg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"  android:cacheColorHint="#00000000" android:divider="#dcdcdc" android:dividerHeight="1px" android:listSelector="#00000000" android:fadingEdge="none" ></ListView>
+    
+    
+</LinearLayout>

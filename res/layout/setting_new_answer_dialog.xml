@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp" >
+
+            <LinearLayout
+                android:id="@+id/setting_answer_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                android:id="@+id/tv_answer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="请设置新安全问题"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_color_base"
+                    android:textSize="16sp"  />
+
+                <EditText
+                    android:id="@+id/et_new_answer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="14sp"
+                    android:hint="请输入问题" />
+
+                <!-- <TextView -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_below="@id/tv_answer" -->
+                <!-- android:layout_marginTop="35dip" -->
+                <!-- android:text="回答" /> -->
+
+                <EditText
+                    android:id="@+id/et_new_ask"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="14sp"
+                    android:hint="请输入答案" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_new_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gary"
+                    android:text="取消" 
+                    android:textColor="@color/text_color_base"/>
+
+                <Button
+                    android:id="@+id/btn_new_yes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue"
+                    android:text="确定" 
+                    android:textColor="@color/white_color"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

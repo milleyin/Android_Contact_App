@@ -1,0 +1,9 @@
+<set android:shareInterpolator="false" xmlns:android="http://schemas.android.com/apk/res/android">
+<rotate
+android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+android:fromDegrees="12"
+android:toDegrees="0"
+android:pivotX="100%"
+android:pivotY="100%"
+android:duration="100" />
+</set>

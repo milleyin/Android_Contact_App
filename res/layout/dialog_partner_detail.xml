@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout android:layout_width="300dp" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/dialog_bg"  >
+        
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginTop="10dp">
+            <TextView android:id="@+id/tv_title" android:textSize="16sp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_marginLeft="15dp"  android:textColor="@color/text_color_base"  />
+            <Button android:id="@+id/btn_close" android:layout_width="12dp" android:layout_height="12dp" android:background="@drawable/close" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/remind_bg2" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp"  >
+            
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp" android:orientation="horizontal"  >
+            <TextView android:layout_width="70dp" android:layout_height="fill_parent" android:gravity="right|center_vertical" android:text="职业" android:textSize="14sp"  android:textColor="@color/text_color_gray" android:paddingRight="10dp" />
+            <TextView android:layout_width="1px" android:layout_height="fill_parent" android:background="#bfbfbf" android:textSize="14sp"  />
+            <TextView android:id="@+id/tv_job" android:paddingLeft="10dp" android:textSize="14sp"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="left|center_vertical"  android:textColor="@color/text_color_gray" />
+        </LinearLayout>
+        
+        <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#bfbfbf" />
+        
+        <ListView android:id="@+id/lv_partner_numbers" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/style_my_listView"  ></ListView>
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

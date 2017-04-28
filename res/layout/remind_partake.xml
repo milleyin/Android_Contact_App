@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="300dp" android:layout_height="wrap_content"  android:background="#ffffff" android:orientation="vertical" android:id="@+id/linearlayout" >
+    <TextView  android:layout_width="fill_parent" android:background="@drawable/remind_top_bg" android:textSize="18sp" android:layout_height="40dp" android:gravity="center_vertical" android:text="请选择参与人" android:textColor="@color/text_color_base" android:layout_marginBottom="5dp" android:paddingLeft="10dp" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button android:id="@+id/btn_all_contact"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="全部联系人" 
+            android:textColor="#ffffff"
+            android:background="@drawable/remind_partake_select" /> 
+        
+        <Button android:id="@+id/btn_group"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:text="分组"
+            android:textColor="@color/text_color_base"
+            android:background="@drawable/remind_partake_normal"/>
+        
+    </LinearLayout>
+
+    <TextView android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="#acacac" />
+    
+   <LinearLayout android:id="@+id/contact_ln" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+       <ListView android:id="@+id/lv_partake_contact" android:layout_width="fill_parent"  android:layout_height="350dp" style="@style/style_my_listView" />
+<!--        <com.dongji.app.ui.SideBar android:id ="@+id/sideBar1"  android:layout_height="fill_parent"   android:layout_width="20dp"  android:layout_gravity="right|center_vertical" android:background="@drawable/sidebar_bg"/> -->
+   </LinearLayout>
+   
+   
+     <ExpandableListView 
+    	                android:visibility="gone"
+                android:id="@+id/group_expandableListView"
+                style="@style/style_my_listView"
+                android:layout_width="fill_parent"
+                android:childDivider="#ececec"
+                android:layout_height="350dp"
+                android:background="#f5f5f5"
+                android:groupIndicator="@null" >
+            </ExpandableListView>
+   
+     
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+                   
+        <Button android:id="@+id/btn_partake_cancel"
+             android:background="@drawable/btn_gary" 
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+              android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent" 
+              android:textColor="@color/text_color_base"
+              android:textSize="14sp"
+            android:text="取消"/>
+           
+        <Button android:id="@+id/btn_partake_yes"
+             android:background="@drawable/btn_blue" 
+              android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent" 
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:textSize="14sp"
+              android:textColor="@color/white_color"
+            android:text="保存"/>
+        
+    </LinearLayout>
+    
+   </LinearLayout>
+     

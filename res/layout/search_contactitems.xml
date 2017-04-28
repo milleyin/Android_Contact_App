@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/main_layout"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/contactitem_catalog"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+           
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="60dp"  android:layout_marginTop="5dp" android:layout_marginBottom="5dp" >
+        
+<!--         <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" > -->
+<!--          <ImageView android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/menu_call"  /> -->
+<!--          <ImageView android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/menu_sms_detail" /> -->
+<!--         </RelativeLayout> -->
+
+ 		<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="gone" >
+          <ImageView android:layout_alignParentLeft="true" android:layout_marginTop="15dp" android:layout_marginLeft="5dp" android:layout_width="32dp" android:layout_height="wrap_content" android:src="@drawable/menu_call" />
+         <ImageView android:layout_alignParentRight="true" android:layout_marginTop="15dp" android:layout_width="32dp" android:layout_marginRight="3dp" android:layout_height="wrap_content" android:src="@drawable/menu_sms_detail" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/contactitem_avatar_iv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/default_contact" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip" >
+
+            <TextView  android:text="asdfasdf"
+                android:id="@+id/contactitem_nick"
+                android:textColor="@color/text_color_base"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+               	android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+
+            <TextView android:text="asdfasdf"
+                android:id="@+id/number"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColor="@color/text_color_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/contactitem_nick"
+                android:paddingLeft="5dip" />
+            
+            <Button 
+                    android:id="@+id/othernumber_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:padding="3dp"
+                    android:layout_toRightOf="@id/number"
+                    android:visibility="gone"
+                    android:layout_marginRight="5dip"
+                	android:layout_marginTop="12dp"
+                	android:focusable="false"
+                    android:background="@drawable/add_buttom"/>
+
+            <TextView  android:text="asdfasdf"
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_list_item"
+                android:textSize="14sp"
+                android:layout_below="@id/contactitem_nick" />
+
+<!--             <RelativeLayout -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_alignParentLeft="true" -->
+<!--                 android:layout_alignParentTop="true" > -->
+
+<!--                 <ImageView -->
+<!--                     android:id="@+id/shortcut" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_alignParentRight="true" -->
+<!--                     android:visibility="invisible" -->
+<!--                     android:paddingRight="10dip" -->
+<!--                     android:src="@drawable/ic_launcher" /> -->
+<!--             </RelativeLayout> -->
+            
+            <LinearLayout 
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                
+                <ImageView 
+                    android:id="@+id/img_remind_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@drawable/remind_icon"
+                    android:layout_marginBottom="5dp"
+                    />
+<!--                  <Button  -->
+<!--                     android:id="@+id/heat_tips" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:visibility="gone" -->
+<!--                     android:text="热度"/> -->
+				<ProgressBar  
+				    android:id="@+id/progressBar" 
+				    android:layout_width="40dp"  
+				    android:layout_height="12dp"  
+				    style="?android:attr/progressBarStyleHorizontal" 
+				    android:max="100" 
+				    android:progress="0" 
+				    android:progressDrawable="@drawable/barcolor"
+				    android:background="@drawable/progressbar_bg"/> 
+
+                  
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </LinearLayout>
+    
+    </FrameLayout>
+    
+   </LinearLayout>
+    
+</LinearLayout>

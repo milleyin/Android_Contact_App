@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:padding="0dp"
+    android:id="@+id/main_layout"
+    android:layout_height="wrap_content" >
+    
+    
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical" >
+
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"  >
+        
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+         <ImageView android:layout_alignParentLeft="true" android:layout_marginTop="15dp" android:layout_marginLeft="5dp" android:layout_width="32dp" android:layout_height="wrap_content" android:src="@drawable/menu_call" />
+         <ImageView android:layout_alignParentRight="true" android:layout_marginTop="15dp" android:layout_width="32dp" android:layout_marginRight="3dp" android:layout_height="wrap_content" android:src="@drawable/menu_sms_detail" />
+        </RelativeLayout>
+        
+        <AbsoluteLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            
+            <LinearLayout
+        android:paddingLeft="3dp"
+        android:background="#ffffff"
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/contactitem_avatar_iv"
+                android:src="@drawable/default_contact"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical" />
+            
+            <LinearLayout
+                android:id="@+id/main_lt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                     android:layout_marginLeft="3dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                     >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="1" >
+                         <TextView
+                            android:id="@+id/contactitem_nick"
+                            android:text="asdfasdfsds"
+                            android:textColor="@color/text_color_base"
+                            android:textSize="@dimen/text_size_list_item_big"
+                            android:layout_marginRight="2dp"
+                            android:singleLine="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" />
+
+                        <TextView
+                            android:id="@+id/number"
+                            android:textSize="@dimen/text_size_list_item_big"
+                            android:textColor="@color/text_color_base"
+                            android:singleLine="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" 
+                            android:text="12345211"/>
+                        </LinearLayout>
+                        
+                 		<TextView
+		                  android:id="@+id/missedNum"
+		                  android:textColor="#000000"
+		                  android:singleLine="true"
+		                  android:layout_width="wrap_content"
+		                  android:layout_height="wrap_content"
+		                  android:text="(12)"
+		                  android:layout_marginLeft="5dp"
+		                  android:layout_marginRight="5dp" />
+                        
+                        
+                         <TextView
+                            android:id="@+id/date"
+                            android:textColor="@color/text_color_list_item"
+                            android:singleLine="true"
+                            android:text="03:12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                          
+                    </LinearLayout>
+
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal" >
+                         
+                       <TextView
+                        android:id="@+id/area"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:singleLine="true"
+                        android:text="广东 深圳 移动"
+                        android:textColor="@color/text_color_list_item"
+                        android:layout_height="wrap_content" />
+                            
+                       
+                        <TextView android:id="@+id/day" android:singleLine="true" android:text="9月12日"  android:textColor="@color/text_color_list_item" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="3dp" />
+                        
+                        <TextView
+                            android:id="@+id/duration"
+                            android:text="2分15秒" 
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_list_item"
+                            android:layout_width="wrap_content"
+                            
+                            android:layout_height="wrap_content" />
+                        
+                           </LinearLayout>
+                
+                    
+                    
+                  </LinearLayout>
+
+              </LinearLayout>
+            
+              <LinearLayout android:layout_marginRight="5dp" android:layout_marginLeft="5dp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center_vertical" >
+                                  <ImageView
+                            android:id="@+id/type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+              </LinearLayout>
+            
+              <CheckBox android:id="@+id/checkBoxEdit" android:focusable="false" android:layout_marginLeft="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyCheckBox" android:layout_gravity="center_vertical" />
+           </LinearLayout>
+        </AbsoluteLayout>
+    
+    </FrameLayout>
+        
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:background="@drawable/menu_bg"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="-42dp"
+        android:clickable="true"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:gravity="center"
+            android:layout_weight="1" >
+                 <Button
+            android:id="@+id/menu_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_call" />
+        </LinearLayout>
+        
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_weight="1" >
+            <Button
+            android:id="@+id/menu_sms_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_sms_detail" />
+        </LinearLayout>
+        
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:gravity="center"
+            android:layout_weight="1" >
+                    <Button
+            android:id="@+id/menu_contact_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_cotact_detail" />
+        </LinearLayout>
+        
+        <LinearLayout  android:id="@+id/l_remind" android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:gravity="center"
+            android:layout_weight="1" >
+                 <Button
+            android:id="@+id/menu_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_remind"/>
+        </LinearLayout>
+        
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:gravity="center"
+            android:layout_weight="1" >
+                 <Button
+            android:id="@+id/menu_add_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_add_to" />
+        </LinearLayout>
+
+                <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:gravity="center"
+            android:layout_weight="1" >
+                  <Button
+            android:id="@+id/menu_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_delete" />
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

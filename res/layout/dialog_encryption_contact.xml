@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+<RelativeLayout
+    android:layout_margin="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/dialog_bg" >
+    
+     <LinearLayout
+         android:padding="10dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+    
+<!--     <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="输入加密密码:" android:textColor="@color/text_color_base" android:textSize="18sp" android:background="@drawable/remind_top_bg"  android:gravity="center" /> -->
+    <EditText android:id="@+id/et_encryption" android:password="true" android:layout_width="fill_parent" android:layout_height="40dp" android:background="@drawable/edittext_bg"  android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:textSize="14sp" android:hint="请输入加密密码" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp"  >
+        <Button android:id="@+id/btn_en_cancle" android:layout_width="fill_parent" android:layout_weight="1" android:textColor="@color/text_color_base" android:background="@drawable/btn_gary" android:layout_height="40dp" android:text="取消" android:textSize="14sp" android:layout_marginRight="5dp" />
+        <Button android:id="@+id/btn_en_ok" android:layout_width="fill_parent" android:layout_weight="1" android:textColor="@color/white_color" android:textSize="14sp" android:layout_height="40dp" android:text="确定" android:background="@drawable/btn_blue" android:layout_marginLeft="5dp" />
+        
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

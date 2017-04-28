@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 收藏联系人布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/ln_collect_contacts"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+     <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+     
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal" >
+        
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_0"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number"  android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+      </LinearLayout>
+       
+    <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_1"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name"  android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number"  android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+     </LinearLayout>
+        
+    <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+       
+    
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_2"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number"  android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+       </LinearLayout>
+      
+    </LinearLayout>
+    
+     <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal" >
+        
+         <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:id="@+id/fa_3"
+           android:layout_weight="1"
+           android:background="#ffffff"
+            android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+      </LinearLayout>
+      
+         <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+       
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_4"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"     android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+     </LinearLayout>
+        
+       <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+    
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_5"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"     android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+       </LinearLayout>
+        
+    </LinearLayout>
+    
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal" >
+        
+        <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:id="@+id/fa_6"
+           android:layout_weight="1"
+           android:background="#ffffff"
+            android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"     android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+      </LinearLayout>
+       
+        <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+        
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_7"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"     android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+     </LinearLayout>
+        
+       <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+    
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_8"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"     android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+       </LinearLayout>
+        
+    </LinearLayout>
+    
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#bfbfbf" />
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="50dp" android:orientation="horizontal" >
+        
+        
+          <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:id="@+id/fa_9"
+           android:layout_weight="1"
+          android:background="#ffffff"
+            android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"     android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+      </LinearLayout>
+       
+          <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+          
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_10"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"     android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+     </LinearLayout>
+        
+       <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#bfbfbf" />
+    
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fa_11"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:orientation="horizontal"  >
+    
+       <LinearLayout android:id="@+id/btn_collect_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical" android:clickable="true" >
+             <TextView android:id="@+id/tv_name" android:textColor="@color/fa_contact_name_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="18sp" android:textStyle="bold"  android:singleLine="true" />
+             <TextView android:id="@+id/tv_number" android:textColor="@color/fa_contact_number_normal_color" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"     android:singleLine="true" />
+        </LinearLayout>
+
+       <LinearLayout android:id="@+id/ln_delete_collect_contact" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="top" >
+           <ImageView android:id="@+id/btn_delete_collect_contact" android:layout_width="20dp" android:layout_height="20dp" android:clickable="true" android:src="@drawable/contact_item_delete" android:visibility="gone" />
+       </LinearLayout>
+       </LinearLayout>
+       
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

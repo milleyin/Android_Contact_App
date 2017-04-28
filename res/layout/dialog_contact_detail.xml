@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout android:layout_width="300dp" android:layout_height="wrap_content"  android:orientation="vertical" android:background="@drawable/dialog_bg" android:padding="15dp" >
+        <Button android:id="@+id/btn_home_hone"  android:layout_width="fill_parent" android:layout_height="40dp" android:text="固话" android:layout_weight="1" android:textColor="@color/text_color_gray" android:background="@drawable/btn_ln" android:textSize="16sp" android:gravity="left|center_vertical"  />
+        <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#cecece" />
+        
+        <Button android:id="@+id/btn_mobile"  android:layout_width="fill_parent" android:layout_height="40dp" android:text="手机" android:layout_weight="1" android:textColor="@color/text_color_gray" android:background="@drawable/btn_ln" android:textSize="16sp" android:gravity="left|center_vertical" />
+        <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#cecece" />
+        
+        <Button android:id="@+id/btn_email"  android:layout_width="fill_parent" android:layout_height="40dp" android:text="邮箱" android:layout_weight="1"  android:textColor="@color/text_color_gray" android:background="@drawable/btn_ln"  android:textSize="16sp" android:gravity="left|center_vertical" />
+        <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#cecece" />
+        
+        <Button android:id="@+id/btn_address" android:layout_width="fill_parent" android:layout_height="40dp" android:text="地址" android:layout_weight="1" android:textColor="@color/text_color_gray" android:background="@drawable/btn_ln"  android:textSize="16sp" android:gravity="left|center_vertical"  />
+        <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#cecece" />
+        
+        <Button android:id="@+id/btn_website" android:layout_width="fill_parent" android:layout_height="40dp" android:text="网站" android:layout_weight="1" android:textColor="@color/text_color_gray" android:background="@drawable/btn_ln"  android:textSize="16sp"  android:gravity="left|center_vertical"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="1px" android:background="#cecece" />
+        
+        <Button android:id="@+id/btn_note" android:layout_width="fill_parent" android:layout_height="40dp" android:text="备注" android:layout_weight="1"  android:textColor="@color/text_color_gray" android:background="@drawable/btn_ln" android:textSize="16sp" android:gravity="left|center_vertical"  />
+    </LinearLayout>
+    
+
+</LinearLayout>

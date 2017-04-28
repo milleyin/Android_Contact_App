@@ -1,0 +1,38 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">动机通讯录</string>
+    <string name="menu_settings">Settings</string>
+    <string name="out_tab1">outTab1</string>
+    <string name="out_tab2">outTab2</string>
+    <string name="out_tab3">outTab3</string>
+    <string name="title">动机通讯录</string>
+    <string name="contact">联系人</string>
+    <string name="sms">短信</string>
+    <string name="calllog">最近通话</string>
+    <string name="time">时长：</string>
+    <string name="expand">点击展开</string>
+    <string name="packup">点击收起</string>
+    <string name="team_singlechat_text_send">Send</string>
+    <color name="my_color">#ff5865</color>
+    <string name="area">广东省深圳市移动</string>
+    <string name="settingpwd">设置你的密码</string>
+    <string name="searchpwd">请输入您的密码进行查看</string>
+    <string name="pwd_tips">输入的密码不一致，请重新输入！</string>
+    <string name="pwd_null">请输入密码！</string>
+    <string name="pwd_error">输入的密码错误，请重新输入！</string>
+    <string name="forget_dialog_title">忘记密码</string>
+    <string name="setting_new_pwd">设置新密码</string>
+
+    <string name="title_activity_main">app</string>
+     <string name="tv_cancel">点击\"取消\"后即将终止对您本机</string>
+     <string name="tv_cancel_add">相关数据的备份</string>
+     <string name="tv_backup_add">相关数据进行备份</string>
+      <string name="tv_backup_cloud">点击\"备份到云端\"后即将对您本机的</string>
+      <string name="tv_recovery_cloud">点击\"从云端恢复\"后即将对您本机的</string>
+      <string name="tv_recovery_cloud_add">相关数据进行恢复：</string>
+      <string name="tv_tips_top_backup">正在对您本机以下的相关数据进行备份</string>
+      <string name="tv_tips_top_recovery">正在对您本机以下的相关数据进行恢复</string>
+      <string name="tv_tips_top_recovery_finish">已完成对您本机的以下相关数据的恢复：</string>
+      <string name="tv_recovery_cloud_finish">点击 \"完成\" 完成恢复：</string>
+      
+</resources>

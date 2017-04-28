@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/dialog_bg" >
+    
+    <LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+        
+        <TextView android:layout_width="fill_parent" android:layout_height="40dp" android:textSize="16sp" android:background="@drawable/remind_top_bg" android:text="请选择联系人" android:gravity="center_vertical" android:textColor="@color/text_color_base" android:paddingLeft="10dp" />
+
+    <ListView android:id="@+id/lv" android:layout_width="fill_parent" android:layout_height="350dp" android:layout_weight="1" style="@style/style_my_listView"  ></ListView>
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_margin="10dp">
+       <Button android:id="@+id/btn_pick_cancle" android:text="取消" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_weight="1" android:gravity="center" android:background="@drawable/btn_gary" android:textColor="@color/text_color_base" android:textSize="14sp"/>
+        <Button android:id="@+id/btn_pick_ok" android:text="确定" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_weight="1" android:gravity="center" android:background="@drawable/btn_blue" android:layout_marginLeft="10dp"  android:textColor="@color/white_color" android:textSize="14sp"/>
+    </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

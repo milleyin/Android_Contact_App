@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="5dp" >
+        
+        <LinearLayout android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:orientation="horizontal" >
+            <Button android:id="@+id/btn_callog_history" android:layout_centerVertical="true" android:text="通话记录" android:background="@drawable/black_white_top_left_selected" android:layout_width="110dp" android:layout_height="35dp" android:textColor="@color/text_color_base" />
+            <Button android:id="@+id/btn_sms_history" android:layout_centerVertical="true" android:layout_width="110dp" android:layout_height="35dp" android:text="短信记录" android:background="@drawable/black_white_top_right_normal" android:textColor="@color/text_color_base" />
+        </LinearLayout>
+        <Button android:id="@+id/btn_pick_history_number" android:layout_centerVertical="true"  android:layout_marginRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_pick_history_number_click" android:textColor="@color/text_color_base"  android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_marginTop="5dp" android:layout_width="fill_parent" android:layout_height="40dp" android:orientation="horizontal" android:background="#ececec" >
+        <ImageView android:layout_marginLeft="5dip" android:layout_marginRight="5dp" android:id="@+id/img" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/top_recent_call" />
+       	<TextView android:layout_toRightOf="@id/img" android:layout_centerVertical="true" android:textColor="@color/text_color_base" android:id="@+id/tv_history_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通话记录(共0条)"/>
+        <Button android:layout_marginRight="5dip" android:id="@+id/btn_history_muilt_delete" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/menu_delete_2" android:layout_alignParentRight="true" />
+        <CheckBox android:layout_centerVertical="true"  android:layout_alignParentRight="true"  android:id="@+id/check_all" android:layout_marginLeft="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyCheckBox" android:layout_gravity="center_vertical" />
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.7dp" android:background="#d5d5d5" />
+    
+    <!--  
+    <ListView android:id="@+id/lv_calllogs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"  android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="10px" android:listSelector="#00000000" ></ListView>
+    -->
+    
+    <ListView android:id="@+id/lv_history" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1"  android:cacheColorHint="#00000000" android:listSelector="#00000000" android:dividerHeight="1px" android:divider="#00000000" android:fadingEdge="none" ></ListView>
+    
+</LinearLayout>

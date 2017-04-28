@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/main_layout"
+    android:layout_height="wrap_content" >
+    
+    
+    <LinearLayout android:layout_width="fill_parent"
+                  android:background="#ffffff"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical" >
+
+        <LinearLayout
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/main_lt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp" >
+                    <TextView android:id="@+id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="发件人:我"  android:layout_weight="1"  android:textColor="@color/text_color_base" />
+                    <TextView android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8/5 12:30"  android:textColor="#666666"/>
+                </LinearLayout>
+                
+                <TextView android:id="@+id/tv_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你妈喊你回家吃饭啦"  android:textColor="#666666"/>
+                
+            </LinearLayout>
+            
+            <CheckBox android:id="@+id/checkBoxEdit" android:focusable="false" android:layout_marginLeft="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyCheckBox" android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    
+        
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:background="@drawable/menu_bg"
+        android:layout_marginBottom="-75dp"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_weight="1" >
+                 <Button
+            android:id="@+id/menu_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_cotact_detail"
+             />
+        </LinearLayout>
+        
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1" >
+            <Button
+            android:id="@+id/menu_re_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/btn_sms_collect_repeat_click"/>
+        </LinearLayout>
+        
+        
+        <LinearLayout   android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_weight="1" >
+           <Button
+            android:id="@+id/menu_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/menu_delete" />
+        </LinearLayout>
+                    
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+            
+            
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于我们" android:textColor="@color/text_color_gray"  />
+<!--                 <WebView android:id="@+id/open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/open" android:layout_alignParentRight="true"/> -->
+                <ImageView android:id="@+id/open" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/open" android:layout_alignParentRight="true"/> 
+                
+            </RelativeLayout>
+            
+            <TextView android:layout_width="fill_parent" android:layout_height="0.8dp" android:background="#a9a9a9"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="0.8dp" android:background="#ffffff"/>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center">
+                
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aboutus"/>
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+                    
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="动机通讯录" android:textColor="@color/text_color_gray"  />
+                    <TextView android:id="@+id/update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布时间:2013/03/27" android:textColor="@color/text_color_gray"  />
+                    <TextView android:id="@+id/update_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本信息:V1.1" android:textColor="@color/text_color_gray"  />
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+                            <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp">
+                   
+                    <Button android:id="@+id/check_version" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_weight="1" android:background="@drawable/aboutus_btn_bg" android:text="检测更新" android:textColor="@color/text_color_gray"/>
+                   	<Button android:layout_marginTop="5dp" android:id="@+id/exit" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_weight="1" android:background="@drawable/aboutus_btn_bg" android:text="关闭"  android:textColor="@color/text_color_gray"/>
+                
+                </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="动机科技  版权所有 " android:textColor="@color/text_color_gray" android:gravity="center" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Copyright © 2012 DJ., Inc All Rights Reserved." android:textColor="@color/text_color_gray" android:layout_marginBottom="10dp" android:gravity="center"/>
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

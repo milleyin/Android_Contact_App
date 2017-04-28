@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+     >
+
+    <ListView
+        android:id="@+id/lv_contact_association"
+        style="@style/style_my_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ln_association_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/add_contact_association"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/association_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@id/ivAdd"
+                android:text="新建联系人"
+                android:textColor="@color/text_color_base"
+                android:textSize="@dimen/text_size_list_item_big" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cecece" />
+
+        <RelativeLayout
+            android:id="@+id/add_contact_in_association"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/ivPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/association_contact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@id/ivPause"
+                android:text="添加到已有联系人"
+                android:textColor="@color/text_color_base"
+                android:textSize="@dimen/text_size_list_item_big" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cecece" />
+
+        <RelativeLayout
+            android:id="@+id/send_sms_association"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/ivSendsms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/association_sms" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@id/ivSendsms"
+                android:text="发送短信"
+                android:textColor="@color/text_color_base"
+                android:textSize="@dimen/text_size_list_item_big" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cecece" />
+    </LinearLayout>
+
+</FrameLayout>

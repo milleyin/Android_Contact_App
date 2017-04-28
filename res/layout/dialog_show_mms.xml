@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="40dp"
+		android:paddingBottom="40dp"
+	android:layout_width="wrap_content">
+	
+	<LinearLayout 
+		android:layout_height="fill_parent"
+		android:background="@drawable/dialog_bg"
+		android:layout_width="fill_parent"
+		android:layout_gravity="center_horizontal"
+		android:orientation="vertical"
+		>
+		
+	    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40dp" android:background="@drawable/remind_top_bg"  >
+	        <TextView android:id="@+id/tv_mms_title" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_marginRight="60dp" android:layout_alignParentLeft="true" android:textColor="@color/text_color_base" android:textSize="18sp" android:layout_centerVertical="true" android:gravity="left" android:layout_marginLeft="5dp"  android:singleLine="true"   />
+	        <Button android:id="@+id/btn_close" android:layout_alignParentRight="true" android:layout_width="12dp" android:layout_height="12dp" android:background="@drawable/clear_search_info" android:layout_centerVertical="true" android:layout_marginRight="3dp"  />
+	    </RelativeLayout>
+	    
+	    <ImageView android:id="@+id/img_show_mms_pic" android:layout_margin="10dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="150dp" android:scaleType="centerInside" android:layout_weight="1" />
+	   
+	    <Button android:id="@+id/btn_save_pic"  android:layout_width="fill_parent" android:layout_height="40dp" android:textColor="@color/text_color_base" android:textSize="14sp" android:background="@drawable/btn_gary" android:text="保存" android:layout_margin="5dp" />
+	    
+	</LinearLayout>
+	
+</LinearLayout>

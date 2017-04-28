@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <LinearLayout android:id="@+id/tips_top_layout" android:background="@drawable/dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="10dp" >
+            <TextView android:id="@+id/tv_top_tips" android:textSize="16sp" android:textColor="@color/text_color_base" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginBottom="10dp" >
+                          <Button android:id="@+id/btn_top_tips_no" android:textColor="@color/text_color_base" android:textSize="14sp" android:layout_width="120dp" android:layout_height="40dp" android:background="@drawable/btn_gary"   android:text="取消" />
+                <Button android:id="@+id/btn_top_tips_yes" android:textColor="@color/white_color" android:textSize="14sp" android:layout_width="120dp" android:layout_height="40dp" android:background="@drawable/btn_blue"   android:text="确定" android:layout_marginLeft="15dp"  />
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>

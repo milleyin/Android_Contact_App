@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="8.0dip" >
+
+    <ImageView
+        android:id="@+id/contactitem_avatar_iv"
+        android:src="@drawable/default_contact"
+        android:layout_width="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+            <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+            
+		         <TextView
+		            android:id="@+id/contactitem_nick"
+		            android:textColor="@color/text_color_base"
+		            android:textSize="@dimen/text_size_list_item_big"
+		            android:layout_marginRight="3dp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" />
+		        
+		        <TextView
+		            android:id="@+id/number"
+		            android:layout_width="55dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="5dip"
+		            android:textColor="@color/text_color_base"
+		            android:textSize="@dimen/text_size_list_item_big"
+		            android:singleLine="true"
+		            android:ellipsize="end"/>
+	        </LinearLayout>
+	          <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+		        <TextView
+		            android:id="@+id/date"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/text_color_list_item"
+		            android:layout_marginRight="5dip"
+		            android:singleLine="true"
+		            android:paddingLeft="5dip" />
+	        </LinearLayout>
+         </LinearLayout>
+         <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_list_item"
+            android:layout_below="@id/contactitem_nick" 
+            android:layout_marginRight="3dp"/>
+    </LinearLayout>
+    
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_divider" />
+        
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/setting_delete" />
+
+</LinearLayout>

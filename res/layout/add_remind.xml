@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <!-- <TextView android:id="@+id/tv_top_title" android:layout_width="fill_parent" android:background="#454545" android:layout_height="30dp" android:gravity="center" android:text="新建与XXX的提醒" android:layout_marginBottom="5dp" /> -->
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/remind_top_bg"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:text="新建提醒"
+            android:textColor="@color/text_color_base"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="内容:"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="top|left"
+                        android:lines="4"
+                        android:textSize="12.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="联系人:"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <Button
+                        android:id="@+id/btn_pick_contact"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/remind_bg_pressed"
+                        android:gravity="center"
+                        android:text="选择联系人"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_me"
+                        style="@style/MyCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="我"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="参与人:"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <Button
+                        android:id="@+id/btn_pick_partner"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/remind_bg_pressed"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="选择参与人"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="从:"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <Button
+                        android:id="@+id/btn_start_time"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/remind_et_bg"
+                        android:gravity="center"
+                        android:text="选 择"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="到:"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <Button
+                        android:id="@+id/btn_end_time"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/remind_et_bg"
+                        android:gravity="center"
+                        android:text="选 择"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_all_day"
+                        style="@style/MyCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全天"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+                </LinearLayout>
+
+                <!-- <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="5dp" android:gravity="right" > -->
+                <!-- <CheckBox android:id="@+id/cb_all_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全天" android:textColor="@color/text_color_base"  style="@style/MyCheckBox" /> -->
+                <!-- </LinearLayout> -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="提醒:"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <EditText
+                        android:id="@+id/et_remind_num"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/remind_et_bg"
+                        android:gravity="center"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <Button
+                        android:id="@+id/remind_type"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/remind_bg_pressed"
+                        android:text="分钟"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="提醒次数:"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <EditText
+                        android:id="@+id/et_remind_time"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/remind_et_bg"
+                        android:gravity="center"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="次"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="重复:"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+
+                    <Button
+                        android:id="@+id/repeat_type"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/remind_bg_pressed"
+                        android:text="一次性"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="12.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/repeat_rate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="重复频率:"
+                        android:textColor="@color/text_color_base" />
+
+                    <EditText
+                        android:id="@+id/et_repeat_freq"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/remind_bg"
+                        android:gravity="center"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/text_color_base" />
+
+                    <TextView
+                        android:id="@+id/repeat_rate_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="天"
+                        android:textColor="@color/text_color_base" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/repeat_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="重复时间:"
+                        android:textColor="@color/text_color_base" />
+
+                    <LinearLayout
+                        android:id="@+id/ln_repeat_time_week"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal" >
+
+                            <CheckBox
+                                android:id="@+id/cb_monday"
+                                style="@style/MyCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tag="1"
+                                android:text="一"
+                                android:textColor="@color/text_color_base" />
+
+                            <CheckBox
+                                android:id="@+id/cb_tuesday"
+                                style="@style/MyCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:tag="2"
+                                android:text="二"
+                                android:textColor="@color/text_color_base" />
+
+                            <CheckBox
+                                android:id="@+id/cb_wednesday"
+                                style="@style/MyCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:tag="3"
+                                android:text="三"
+                                android:textColor="@color/text_color_base" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal" >
+
+                            <CheckBox
+                                android:id="@+id/cb_thursday"
+                                style="@style/MyCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tag="4"
+                                android:text="四"
+                                android:textColor="@color/text_color_base" />
+
+                            <CheckBox
+                                android:id="@+id/cb_friday"
+                                style="@style/MyCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:tag="5"
+                                android:text="五"
+                                android:textColor="@color/text_color_base" />
+
+                            <CheckBox
+                                android:id="@+id/cb_saturday"
+                                style="@style/MyCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:tag="6"
+                                android:text="六"
+                                android:textColor="@color/text_color_base" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/cb_sunday"
+                            style="@style/MyCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="7"
+                            android:text="日"
+                            android:textColor="@color/text_color_base" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_repeat_time_month"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <RadioGroup
+                            android:id="@+id/repeat_time_month_rg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/b1"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:id="@+id/b_day_in_month"
+                                style="@style/MyRadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:checked="true"
+                                android:text="每月 的 第30天"
+                                android:textColor="@color/text_color_base" />
+
+                            <RadioButton
+                                android:id="@+id/b_day_in_week_in_month"
+                                style="@style/MyRadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:text="每月 最后一个星期二 "
+                                android:textColor="@color/text_color_base" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_repeat_time_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="开始时间:"
+                            android:textColor="@color/text_color_base" />
+
+                        <Button
+                            android:id="@+id/btn_repeat_start_time"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/remind_bg_pressed"
+                            android:text="设置"
+                            android:textColor="@color/text_color_base" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="结束时间:"
+                            android:textColor="@color/text_color_base" />
+
+                        <Button
+                            android:id="@+id/btn_repeat_end_time"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/remind_bg_pressed"
+                            android:text="设置"
+                            android:textColor="@color/text_color_base" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/cancel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gary"
+                        android:text="取消"
+                        android:textColor="@color/text_color_base"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_blue"
+                        android:text="保存"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" >
+     
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_height"
+    android:orientation="horizontal"
+    android:background="@color/base_bg" >
+
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="记事本"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#ffffff" 
+    android:orientation="vertical" >
+
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_marginTop="-1dp" android:layout_height="40dp" android:background="@drawable/top_bg_shadow" >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingLeft="15dp" android:textSize="@dimen/text_size_list_item_big" android:textColor="@color/text_color_base"  android:text="记事本列表" android:layout_centerVertical="true" />
+       
+        <LinearLayout android:layout_alignParentRight="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center_vertical" android:layout_centerInParent="true" >
+	                <LinearLayout android:id="@+id/add_notebook" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center">
+	                	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_remind_add_gray" android:layout_marginRight="3dp" />
+	                </LinearLayout>
+	                <LinearLayout android:id="@+id/notebook_delete" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center">
+	                	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/setting_delete_2" android:layout_marginRight="15dp" android:layout_marginLeft="15dp"/>
+	                </LinearLayout>
+    	</LinearLayout>
+    </RelativeLayout>
+    <!-- <View android:layout_width="fill_parent" android:layout_height="0.5dp" android:background="#d5d5d5"/> -->
+     	
+    <EditText android:id="@+id/content" android:layout_width="fill_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:background="@drawable/setting_text_bg" android:layout_height="wrap_content" android:minLines="6" android:visibility="gone" android:gravity="top|left" android:padding="5dp" android:textColor="@color/text_color_base" />
+    <ListView android:id="@+id/notebook_lv"  android:listSelector="#00000000"  android:layout_width="fill_parent"   android:layout_height="wrap_content" android:layout_weight="1" android:cacheColorHint="#00000000" android:dividerHeight="1px" android:divider="#00000000" ></ListView>
+    
+</LinearLayout>
+   
+</LinearLayout>
+

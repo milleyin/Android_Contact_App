@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/dialog_bg">
+       
+     <LinearLayout
+         android:id="@+id/delete_ly" 
+         android:padding="20dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+        >
+         
+         <Button android:id="@+id/delete_one_info" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_margin="10dp" android:text="删除此条通话记录" android:background="@drawable/btn_gary" android:textColor="@color/text_color_base"/>
+         <Button android:id="@+id/delete_all_info" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_margin="10dp" android:text="删除所有通话记录" android:background="@drawable/btn_gary" android:textColor="@color/text_color_base"/>
+     </LinearLayout>
+     
+</RelativeLayout>

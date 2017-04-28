@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:id="@+id/tips_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_del_mode"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_orange"
+            android:text="批量删除"
+            android:textColor="@color/white_color" />
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/tips_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_top_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@color/text_color_base" />
+
+            <Button
+                android:id="@+id/btn_top_tips_no"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_gary"
+                android:text="取消"
+                android:textColor="@color/text_color_base" />
+
+            <Button
+                android:id="@+id/btn_top_tips_yes"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_blue"
+                android:text="确定"
+                android:textColor="@color/text_color_base" />
+            
+        </LinearLayout>
+
+</RelativeLayout>
